@@ -1,0 +1,44 @@
+-features	file containing feature matrix
+-complementClasses	use complement natural classes
+-identityConstraints	allow constraints with backreferences xxx broken
+-adhocConstraints	allow (inviolable) constraints with ad hoc natural classes
+-corpus	file containing learning data
+-projections	file containing projection list
+-heldout	file containing held-out data (e.g., for cross-validation
+-test	file containing testing list
+-minWordLength	minimum length of words (w/out boundaries) in eval and samples
+-maxWordLength	maximum length of words (w/out boundaries) in eval and samples
+-maxConSize	maximum number of constraints to select
+-maxConLength	maximum length of selected constraints (overridden by projection-specific settings)
+-l1	coefficient of the l1 (Laplace, double-exponential) regularizer
+-l2	multiplier of the l2 (Gaussian) regularizer
+-sigma2	variance of the l2 (Gaussian) regularizer
+-scale	data multiplier (the frequency of every corpus item is multiplied by _scale_; default value is 1.0)
+-alpha	alpha level of the likelihood ratio test that is used to halt constraint selection
+-beta	additive smoothing parameter (the frequencies of all *types* are increased by adding beta (default value is 0)
+-gamma	scales 'energy' (neg. harmony) term relative to neg. log. prob. term in the objective function (default value is 0.0)
+-filter	file containing a (hard) filter on Sigma*
+-inviolable	file containing hard constraints
+-grammar	file containing soft constraints (optionally with weights)
+-outputSuffix	suffix of the grammar/tableau files written after learning/training
+-select	learn constraints
+-selectFromList	learn constraints from a pre-given list
+-evaluator	method for selecting constraints (gain [default], observedOverExpected, grafting)
+-minGain	minimum gain that a constraint must have to be selected
+-maxObsVioln	maximum number of observed violations allowed for induced constraints [default: unbounded]
+-train	train weights
+-prune	recompute negLogProb of corpus with each constraint removed
+-crossValidate	tune regularization parameter by cross-validation (argument is the folder containing the 'folds')
+-weightElim	use weight elimination regularizer; parameter is (sigma_2)^2
+-cyclicEval	eval (if built) is a cyclic machine that accepts Sigma*
+-matchLengthDistrib	if set, empirical length distribution is matched in sampling and expectation computation
+-doNotAddStarSeg	if set, the *segment constraint is not added to the grammar
+-doNotBuildEval	do not build eval (useful only for testing, not selection or training)
+-doNotAddWordBoundares	do not add word boundaries when reading in corpus or testing data (primarily useful for testing)
+-prePrune	prune the constraint search space before selection begins
+-saveEveryN	save the grammar after every N constraints (N an integer)
+-sample	print a sample from the grammar (either read from a file or after learning)
+-printGrammar	print the grammar (with observed and expected values for every constraint)
+-grammarInfo	print constraints as regexps and data forms that violate each constraint
+-help	print this help information and quit
+-doNotPruneConstraints do not prune constraints 
