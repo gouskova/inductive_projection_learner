@@ -1,0 +1,1 @@
+default	any	all	3

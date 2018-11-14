@@ -1,0 +1,1412 @@
+args=[-test, test.txt,  # test on forms after learning, writing tableau.txt, -minGain, 170,  # threshold that constraint must exceed to be learned, -select, -train,  # train weights and write grammar.txt after selection, -projections, projections.txt, -evaluator, gain,  # options are "gain", "observedOverExpected", "grafting", -features, features.txt,  # , -maxConSize, 60,  # max. number of constraints to learn, -maxWordLength, 6, -l2, 0.00001,  # scale of L2 weight regularizer, -corpus, corpus.txt]
+Reading corpus ...
+number of training data items: 4688
+empiricalLengthDistrib: {4=15, 5=39, 6=701, 7=425, 8=1251, 9=644, 10=1058, 11=402, 12=116, 13=26, 14=8, 15=2, 17=1}
+maxWordLength: 6
+constructing projection from descriptor: [default, any, all, 3] ...
+	projection name: default
+	segment mask: (<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+	all segments projected? true
+	projected features: wb,syll,cons,sonorant,cont,nas,delrel,voice,sg,lab,cor,ant,secart,dor,high,low,back
+	all featuress projected? true
+	number of natural classes : 237
+	min length of constraints: 1
+	max length of constraints: 3
+	max length of indexed sequences: 3
+Reading test list ...
+l2 (Gaussian) regularizer: mu=0.0 sigma^2=1.0
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [22.450115261097086]
+Learning constraints ...
+RegularizedGainEvaluator:
+	true
+enumerating constraints on projection default
+		237
+		12867
+. . . . . . . . 		860296
+	number of constraints: 873400
+making sample ...
+sample size: 50000 (number of distinct strings: 50000)
+done
+Searching constraints on projection default (maximum constraint length = 1, gamma = 0.0) ...
+	best constraint: [-sonorant,-ant] gain=4228.516046278399
+	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+	(# constraints pruned by (O-E)>=0 : 0)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [21.068402689919306]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	37358.975169764075	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.0207995786234103	1113.0	1113.0000404159894	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+
+number of constraints: 2
+
+making sample ...
+sample size: 50000 (number of distinct strings: 49999)
+done
+Searching constraints on projection default (maximum constraint length = 1, gamma = 0.0) ...
+	best constraint: [+sg] gain=3737.308938837256
+	(mh|nh|vh|bh|dh|h)
+	(# constraints pruned by (O-E)>=0 : 0)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [19.948012575244913]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	37327.88863640874	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.2074883208379568	1113.0	1113.000044149762	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.446175782266681	526.0	526.0000489235105	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+
+number of constraints: 3
+
+making sample ...
+sample size: 50000 (number of distinct strings: 50000)
+done
+Searching constraints on projection default (maximum constraint length = 1, gamma = 0.0) ...
+	best constraint: [-nas,+lab] gain=2219.15749105985
+	(w|p|pf|f|v|vh|b|bh|bv)
+	(# constraints pruned by (O-E)>=0 : 0)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [18.739759690271516]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	37286.45923034603	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.408794075992323	1113.0	1113.0000566905562	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.38955843489347	526.0	526.0001135049667	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	1.1458165015556117	2827.0	2827.000069522483	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+
+number of constraints: 4
+
+making sample ...
+sample size: 50000 (number of distinct strings: 50000)
+done
+Searching constraints on projection default (maximum constraint length = 1, gamma = 0.0) ...
+	best constraint: [-sonorant,+ant] gain=1749.974316460376
+	(t|d|dh|ts|dz|s|z)
+	(# constraints pruned by (O-E)>=0 : 0)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [17.437772548080986]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	37230.11564207386	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.625674561568024	1113.0	1113.0000504594318	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.4306603654415193	526.0	526.0000654898356	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	1.361668687680755	2827.0	2827.0000349350357	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.9777196664188523	3521.0	3521.0000140530133	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+
+number of constraints: 5
+
+making sample ...
+sample size: 50000 (number of distinct strings: 49995)
+done
+Searching constraints on projection default (maximum constraint length = 1, gamma = 0.0) ...
+	best constraint: [-cons,+cor] gain=1159.528197878753
+	(y)
+	(# constraints pruned by (O-E)>=0 : 0)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [17.001102067185613]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	37207.90070544778	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.69839963768188	1113.0	1113.0000571301928	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.48746824253123	526.0	526.0000319242763	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	1.4330387258014112	2827.0	2827.000036196887	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	1.0496463617314173	3521.0	3521.0000413603175	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	2.648454606318203	117.0	117.00004752275751	92069.76808971337	92069.76832609865	null	(y)
+
+number of constraints: 6
+
+making sample ...
+sample size: 50000 (number of distinct strings: 49993)
+done
+Searching constraints on projection default (maximum constraint length = 1, gamma = 0.0) ...
+	best constraint: [+sonorant,-cont] gain=1439.859208168086
+	(m|mh|n|nh|ny|N)
+	(# constraints pruned by (O-E)>=0 : 0)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [15.621374207780615]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	37124.022517275465	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.928117603364473	1113.0	1113.0000619219732	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.254482081791375	526.0	525.9999934409344	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	1.6688244946551323	2827.0	2827.000024707676	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	1.2829428932411964	3521.0	3520.9999932455908	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	2.878172166358476	117.0	117.00009548665616	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.9736762438572669	3308.0	3308.0000004055382	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+
+number of constraints: 7
+
+making sample ...
+sample size: 50000 (number of distinct strings: 49971)
+done
+Searching constraints on projection default (maximum constraint length = 1, gamma = 0.0) ...
+	best constraint: [+cons,+dor] gain=466.5592890802629
+	(N|k|g)
+	(# constraints pruned by (O-E)>=0 : 0)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [14.945926455125813]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	37073.83239531818	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	3.040524382225203	1113.0	1113.0000625378057	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.3386658514317102	526.0	526.0000876400529	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	1.7788784824736132	2827.0	2827.0000559221785	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	1.3939610320635814	3521.0	3521.000012246437	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	2.9905790003981725	117.0	117.00008909544988	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.9718795707122951	3308.0	3308.0000322979045	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.5751851480623645	3115.0	3114.9999953324445	89974.348459926	89974.34876033233	null	(N|k|g)
+
+number of constraints: 8
+
+making sample ...
+sample size: 50000 (number of distinct strings: 49969)
+done
+Searching constraints on projection default (maximum constraint length = 1, gamma = 0.0) ...
+	best constraint: [-high,-low] gain=576.4138447982859
+	(e|o)
+	(# constraints pruned by (O-E)>=0 : 0)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [13.886845143333193]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36979.78418913989	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	3.216671904594959	1113.0	1113.0000644367367	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.425935175817314	526.0	526.0000539964569	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	1.952782169554025	2827.0	2827.000048317431	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	1.5687854626004516	3521.0	3521.000026010817	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	3.1667267392148455	117.0	117.00006397076137	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	1.122055067833177	3308.0	3308.000038856183	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.7288991331939983	3115.0	3115.000023884602	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.7254956891393285	2688.0	2688.0000283548293	89304.85497657201	89304.8553250859	null	(e|o)
+
+number of constraints: 9
+
+making sample ...
+sample size: 50000 (number of distinct strings: 49971)
+done
+Searching constraints on projection default (maximum constraint length = 1, gamma = 0.0) ...
+	best constraint: [-sg,-ant] gain=210.53020620419278
+	(ny|dy|ty)
+	(# constraints pruned by (O-E)>=0 : 0)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [13.84072682993037]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36975.19800698515	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	3.090969802675051	1113.0	1113.000076531505	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.493504731269044	526.0	526.0000381235387	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	1.958838223317177	2827.0	2827.000046304728	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	1.5755032461337009	3521.0	3521.0000391888793	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	3.1743932193387217	117.0	117.00010703589145	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.933132944278299	3308.0	3308.0000030112064	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.7652649394717161	3115.0	3115.0000785105617	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.7331625541483524	2688.0	2687.9999831765863	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	0.9789356038269538	509.0	508.99998050181154	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+
+number of constraints: 10
+
+making sample ...
+sample size: 50000 (number of distinct strings: 49943)
+done
+Searching constraints on projection default (maximum constraint length = 1, gamma = 0.0) ...
+	best constraint: [+cont,+voice,+cor] gain=200.13078199749125
+	(z|zh|zv)
+	(# constraints pruned by (O-E)>=0 : 0)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [13.838152884062843]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36974.94072399585	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.9269356298686007	1113.0	1113.0000588741098	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.50644603992503	526.0	526.0000336418368	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	1.9589695551839532	2827.0	2827.000028865325	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	1.4627567787855995	3521.0	3521.0000432395454	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	3.174821469756995	117.0	117.00006490694902	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.9280637288493984	3308.0	3308.000013117277	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.7665277003909513	3115.0	3114.999996793754	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.7335904372765096	2688.0	2688.0000025676895	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	1.0162694441516564	509.0	508.9999712446688	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.0492758266167854	332.0	332.00001742252823	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+
+number of constraints: 11
+
+making sample ...
+sample size: 50000 (number of distinct strings: 49955)
+done
+Searching constraints on projection default (maximum constraint length = 1, gamma = 0.0) ...
+	best constraint: [-voice,+ant,-secart] gain=240.14445044994628
+	(ts|s)
+	(# constraints pruned by (O-E)>=0 : 0)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [13.833785927042692]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36974.503896995695	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.9087033042651904	1113.0	1113.000027172276	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.5413803116660953	526.0	526.0000514645603	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	1.9589134386098683	2827.0	2827.0000143838092	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	1.170769401101567	3521.0	3521.0000416682587	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	3.1755474336944993	117.0	117.00006401823438	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.9259904855952077	3308.0	3308.0000306194233	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.7675961096913286	3115.0	3115.0000189969146	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.734316394830302	2688.0	2687.999999309463	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	1.0225356862525672	509.0	509.00001853609433	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.2632299876024595	332.0	332.00002047812995	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.0615047205733514	601.0	601.0000240437989	88464.51588412249	88464.51624377567	null	(ts|s)
+
+number of constraints: 12
+
+making sample ...
+sample size: 50000 (number of distinct strings: 49952)
+done
+Searching constraints on projection default (maximum constraint length = 1, gamma = 0.0) ...
+Searching constraints on projection default (maximum constraint length = 2, gamma = 0.0) ...
+	best constraint: [-syll,-nas][+cons] gain=6091.663377079105
+	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+	(# constraints pruned by (O-E)>=0 : 7991)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [14.31301292699804]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36979.925936482716	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	1.7163244682993075	1113.0	1112.9993925829476	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.0645196379666833	526.0	525.9982095728435	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.8938725897556689	2827.0	2826.9970504080384	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.0	3521.0	3449.40281198881	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	2.6776479896134284	117.0	117.00004696946415	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.7530545469336654	3308.0	3307.999088772204	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2564.9805213210298	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	1.0478544689108429	2688.0	2687.9978849685162	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	0.856517001499995	509.0	509.00104612008096	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.2267798554023746	332.0	332.0017549112644	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.0193889123105928	601.0	601.0014841036708	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	9.474755868042907	1.0	1.0009774841363395	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+
+number of constraints: 13
+
+making sample ...
+sample size: 50000 (number of distinct strings: 49851)
+done
+Searching constraints on projection default (maximum constraint length = 2, gamma = 0.0) ...
+	best constraint: [-syll][+wb] gain=4646.029656597936
+	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+	(# constraints pruned by (O-E)>=0 : 6033)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [13.720936240908108]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	37026.71812990937	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	1.432909334943706	1113.0	1112.9949417044793	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	1.9467697697600383	526.0	526.1440150882806	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.596445774695392	2827.0	2827.2025422984166	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.0	3521.0	2756.711245827615	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	2.3851975798578158	117.0	117.11010291289408	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.49326100630464076	3308.0	3308.5132103284664	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2119.0595810241225	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	1.1637200929407916	2688.0	2687.966668445957	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	0.8435575870611641	509.0	509.15620473034625	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.0044194283534544	332.0	332.37276438909504	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	0.7149266440176926	601.0	601.0812580283452	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	9.391358014570326	1.0	1.0019341436831055	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	12.4596775929202	0.0	0.035578188541568696	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+
+number of constraints: 14
+
+making sample ...
+sample size: 50000 (number of distinct strings: 49701)
+done
+Searching constraints on projection default (maximum constraint length = 2, gamma = 0.0) ...
+	best constraint: [-low][+wb] gain=6064.898100800294
+	(y|w|i|e|o|u)(<#|#>)
+	(# constraints pruned by (O-E)>=0 : 6398)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [12.715144661730276]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	37057.69380090012	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	1.404453580258813	1113.0	1113.3857573005491	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	1.9370623431495795	526.0	526.2108224388936	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.5612383355254809	2827.0	2826.868433058522	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.0	3521.0	2697.4829862432803	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	2.3333628231964365	117.0	117.04195603174676	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.4413326465084421	3308.0	3307.615670844862	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2081.5123102883176	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.7299381326230729	2688.0	2688.7649052557017	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	0.8427135257522861	509.0	508.9375213287208	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	0.9838631931597848	332.0	332.2518204163173	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	0.6854927983996641	601.0	600.6198176711326	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	9.338183120316996	1.0	1.0018362890077661	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	13.62069059308257	0.0	0.03854908054559821	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	13.030402318217961	0.0	0.03046560245165011	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+
+number of constraints: 15
+
+making sample ...
+sample size: 50000 (number of distinct strings: 49111)
+done
+Searching constraints on projection default (maximum constraint length = 2, gamma = 0.0) ...
+	best constraint: [+syll][+back] gain=3057.838653267098
+	(i|e|a|o|u)(w|a|o|u)
+	(# constraints pruned by (O-E)>=0 : 6996)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [11.420323579511859]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36963.62810030421	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	1.7441922610116742	1113.0	1112.999018364935	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.0915547147723252	526.0	526.0021841862025	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.8372318030815905	2827.0	2826.997540007293	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.002137916587774485	3521.0	3521.0050680772433	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	2.6682677348761894	117.0	116.99843827740429	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.7573682365963995	3308.0	3308.0077321523245	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2617.1143428634973	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.5507697159924717	2688.0	2688.001095900961	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	0.8585415303437098	509.0	509.0008627206976	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.2476516018578736	332.0	331.99530274865987	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.0469811165489311	601.0	601.0010018312115	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	9.460797630679416	1.0	0.999734688938306	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	17.516080781403556	0.0	9.538914737038304E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	16.78288190415767	0.0	9.480898612886704E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.3053505269137125	165.0	164.9992441437104	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+
+number of constraints: 16
+
+making sample ...
+sample size: 50000 (number of distinct strings: 47735)
+done
+Searching constraints on projection default (maximum constraint length = 2, gamma = 0.0) ...
+	best constraint: [+wb][+syll] gain=1229.0883868663273
+	(<#|#>)(i|e|a|o|u)
+	(# constraints pruned by (O-E)>=0 : 6465)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [10.714814211709513]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36991.84721886957	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	1.961752183444509	1113.0	1112.999756332589	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.145623433464643	526.0	526.0000653190841	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	1.0302707093944343	2827.0	2827.000148986588	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.21812829236043993	3521.0	3521.0003522984903	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	2.7658036401190715	117.0	117.00020516466465	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.8504459286476624	3308.0	3307.9996273835413	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	3038.6854478802525	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.44570367301689806	2688.0	2687.999762674232	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	0.8615872004098598	509.0	508.99987023457174	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.2492735996586417	332.0	331.99997091293915	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.049025721858708	601.0	601.0000474957284	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	9.308842927298011	1.0	1.0004726717293317	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.31822018489802	0.0	3.7538548200778384E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.78508652385681	0.0	3.618233040947541E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.212431300250007	165.0	165.00001954515574	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	2.7843370763244244	143.0	142.99994439235007	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+
+number of constraints: 17
+
+making sample ...
+sample size: 50000 (number of distinct strings: 46777)
+done
+Searching constraints on projection default (maximum constraint length = 2, gamma = 0.0) ...
+	best constraint: [+syll,-low][+syll,-back] gain=586.2224921406706
+	(i|e|o|u)(i|e)
+	(# constraints pruned by (O-E)>=0 : 6759)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [10.346613215797397]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36984.13836933781	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.094645561922451	1113.0	1112.995653847299	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.193075204058678	526.0	526.0017777202795	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	1.1478636437746261	2827.0	2826.997302566331	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.3517315264394195	3521.0	3521.0059563714694	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	2.839206771744355	117.0	116.9984546372184	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.8991573467543126	3308.0	3307.9786912706036	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.07937792952238039	3115.0	3115.0086535085115	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.33005737223141085	2688.0	2688.00267714677	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	0.8822012529942523	509.0	508.9909244919924	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.2512197372323495	332.0	332.00051660625525	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.050806942901189	601.0	600.9895687866806	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	9.219128545963088	1.0	1.000425295618314	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.166454616657635	0.0	3.4909289546431214E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.69550817770552	0.0	3.4615080896911515E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.096936354225623	165.0	164.9984207873478	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	2.609945507771314	143.0	143.00386105921783	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	3.7346614974409427	15.0	15.005940506513108	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+
+number of constraints: 18
+
+making sample ...
+sample size: 50000 (number of distinct strings: 46247)
+done
+Searching constraints on projection default (maximum constraint length = 2, gamma = 0.0) ...
+	best constraint: [-syll,+sonorant][+cons,+sonorant] gain=540.1769926099881
+	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+	(# constraints pruned by (O-E)>=0 : 6782)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [10.630101958068888]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36991.99399889919	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.0199049650328873	1113.0	1112.9999181679627	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.1642077822513386	526.0	526.0000580766063	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	1.0805518079245753	2827.0	2827.000059040315	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.2762535862979969	3521.0	3521.0002282918235	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	2.79722993064788	117.0	117.00004854853324	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.466012299473982	3308.0	3307.999961830265	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.018842301963079025	3115.0	3114.9999992219064	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.3751809399017155	2688.0	2688.0000962690588	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	0.8669567868417882	509.0	508.99996733825145	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.2499569081286346	332.0	332.00003619430646	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.0497163275811148	601.0	601.000060885267	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	9.27444302455928	1.0	1.0002131115951944	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.166504184326417	0.0	3.8073987642643924E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.695467687142283	0.0	3.3976986522168213E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.0836567960760886	165.0	165.00006074935666	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	2.592258700274071	143.0	143.00004831630534	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	3.7264283452477622	15.0	15.000073511873634	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.206748140403527	5.0	5.000156681470555	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+
+number of constraints: 19
+
+making sample ...
+sample size: 50000 (number of distinct strings: 45989)
+done
+Searching constraints on projection default (maximum constraint length = 2, gamma = 0.0) ...
+	best constraint: [-syll][-voice] gain=459.57820287913137
+	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+	(# constraints pruned by (O-E)>=0 : 6906)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [10.792621816695306]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	37066.79492290342	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	1.92294533015465	1113.0	1112.8356971902426	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.145935361911354	526.0	526.1241850910527	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.9950006340062723	2827.0	2826.6894076290737	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.21497626863776273	3521.0	3520.879621642839	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	2.705388993763287	117.0	116.98333462768159	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.26832329619911305	3308.0	3308.360365327742	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2990.3105521795574	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.420687757838944	2688.0	2688.3879809121295	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	0.8660964318432436	509.0	508.94051890135495	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.2963866528192582	332.0	331.8297831406036	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	0.968107980507364	601.0	601.0465570757067	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	8.756401828039474	1.0	0.9812086485454657	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.165644731773437	0.0	3.233703140774076E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.694981721806528	0.0	3.3137771001722356E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	2.9307337165166967	165.0	164.84882668573727	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	2.390267146001666	143.0	142.90342078499052	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	3.5604421489013514	15.0	15.053142386941843	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.154807051689644	5.0	4.964692268300495	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+default	[-syll][-voice]	10.030255491577096	0.0	0.02324321856980929	62135.95481612447	62135.96375822511	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+
+number of constraints: 20
+
+making sample ...
+sample size: 50000 (number of distinct strings: 45772)
+done
+Searching constraints on projection default (maximum constraint length = 2, gamma = 0.0) ...
+	best constraint: [+cons,+sonorant,+dor][+sonorant] gain=560.2864026989769
+	(N)(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N)
+	(# constraints pruned by (O-E)>=0 : 6689)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [10.721937960853875]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	37034.690904908195	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	1.927835369805612	1113.0	1112.9942341529174	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.2766565176894944	526.0	525.9930374862995	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	1.028324021832422	2827.0	2826.988095780773	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.24985462585370005	3521.0	3521.000859129767	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	2.7462610022075014	117.0	117.00341757294031	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.008670852912506138	3308.0	3308.0012157666088	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2422.119396275016	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.4022914388511778	2688.0	2688.0004156856826	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	1.0879113836461285	509.0	509.00558258324156	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.320400364637096	332.0	332.00031376875796	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	0.9473731529748297	601.0	600.9934182308555	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	8.824095489316024	1.0	0.9988839653195163	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.167617854002366	0.0	3.701057949715025E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.689976727821545	0.0	3.3652487487532273E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	2.9979348034463147	165.0	164.9981215761307	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	2.480662887821863	143.0	143.003427318206	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	3.634909268046146	15.0	14.997857640847572	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.189456472268364	5.0	5.001638369964015	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+default	[-syll][-voice]	13.017480362337247	0.0	0.0015560756469525719	62135.95481612447	62135.96375822511	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+default	[+cons,+sonorant,+dor][+sonorant]	2.853673888775634	57.0	56.99466643010387	61488.652053389094	61488.661806317396	null	(N)(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N)
+
+number of constraints: 21
+
+making sample ...
+sample size: 50000 (number of distinct strings: 44892)
+done
+Searching constraints on projection default (maximum constraint length = 2, gamma = 0.0) ...
+	best constraint: [-nas][-delrel,+voice,-sg] gain=394.49807259156563
+	(y|w|i|e|a|o|u|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(b|d|dy|g)
+	(# constraints pruned by (O-E)>=0 : 6807)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [10.256720660463625]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36964.78584728148	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.0538609187648427	1113.0	1112.9973696521645	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.3433654656217806	526.0	526.0022350338023	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	1.1091131745817804	2827.0	2826.998925482793	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.253075574089913	3521.0	3520.9963226585264	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	2.8867170809907985	117.0	116.9971782989633	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.1826240063869718	3308.0	3308.021678552287	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2240.1969927966657	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.3912940783773696	2688.0	2687.9910119933174	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	1.0418724816634692	509.0	509.00481792634685	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.4328973900310344	332.0	331.9948227152388	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.099723437777015	601.0	600.9982384559258	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	8.672535414794233	1.0	0.9974657063698027	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.152317433952433	0.0	3.529850822547677E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.67635495108097	0.0	3.444745103442301E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.126587749337033	165.0	164.99787211879783	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	2.51100994010534	143.0	142.99980767865338	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	3.7553264019907773	15.0	15.000918817160201	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.151228511213366	5.0	5.000409912528753	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+default	[-syll][-voice]	14.209480365005435	0.0	4.902202026805351E-4	62135.95481612447	62135.96375822511	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+default	[+cons,+sonorant,+dor][+sonorant]	2.835246706653095	57.0	56.99938353252971	61488.652053389094	61488.661806317396	null	(N)(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N)
+default	[-nas][-delrel,+voice,-sg]	1.138361623498833	554.0	553.9970789668697	61047.220717486576	61047.23080755426	null	(y|w|i|e|a|o|u|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(b|d|dy|g)
+
+number of constraints: 22
+
+making sample ...
+sample size: 50000 (number of distinct strings: 44315)
+done
+Searching constraints on projection default (maximum constraint length = 2, gamma = 0.0) ...
+	best constraint: [-wb][+delrel,+lab] gain=350.9768159199226
+	(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(pf|bv)
+	(# constraints pruned by (O-E)>=0 : 7100)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [10.21301342189824]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36946.02250105146	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.072289244789436	1113.0	1113.0000498619731	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.388759251806557	526.0	526.000044132699	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.9159769232351973	2827.0	2827.0000072458124	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.2644454083985167	3521.0	3521.000034690713	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	2.917838812939962	117.0	117.00005533406883	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.19821893072628843	3308.0	3307.9999353370504	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2252.623313806024	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.3822711117524298	2688.0	2688.0000006179725	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	1.042430218151881	509.0	509.0000098294686	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.4416723349493368	332.0	332.00001355708656	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.1074071452150167	601.0	601.0000178887528	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	8.64922323754862	1.0	1.0001703222480518	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.11939668362303	0.0	3.6076116487809167E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.659344808188017	0.0	3.522509466259656E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.175952549508889	165.0	165.00006296194678	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	2.4825609427718986	143.0	143.00004936191974	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	3.7868050675023284	15.0	15.000060777540329	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.1483936989639965	5.0	5.000102314372049	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+default	[-syll][-voice]	14.687969153781104	0.0	3.0199066796239056E-4	62135.95481612447	62135.96375822511	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+default	[+cons,+sonorant,+dor][+sonorant]	2.838714069668296	57.0	57.00006523295849	61488.652053389094	61488.661806317396	null	(N)(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N)
+default	[-nas][-delrel,+voice,-sg]	1.206651519238563	554.0	554.0000523687077	61047.220717486576	61047.23080755426	null	(y|w|i|e|a|o|u|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(b|d|dy|g)
+default	[-wb][+delrel,+lab]	2.1495902404875005	87.0	87.00003102829456	60649.09291336219	60649.10317277526	null	(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(pf|bv)
+
+number of constraints: 23
+
+making sample ...
+sample size: 50000 (number of distinct strings: 43792)
+done
+Searching constraints on projection default (maximum constraint length = 2, gamma = 0.0) ...
+	best constraint: [+wb][-syll,+sonorant] gain=281.1931157886002
+	(<#|#>)(y|w|r|m|mh|n|nh|ny|N)
+	(# constraints pruned by (O-E)>=0 : 7285)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [9.975305869122373]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36971.24027641504	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.147437854060465	1113.0	1113.000048839627	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.3966119298364763	526.0	526.0000410350697	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.968664755101409	2827.0	2826.999954146715	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.34079158745150834	3521.0	3521.000094532958	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	2.8009765195983456	117.0	117.00006522334705	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.0	3308.0	3225.5536650164086	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2406.7575069773893	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.3994611567360366	2688.0	2688.00003998253	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	1.033428251930749	509.0	509.00002474396916	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.4194132262111105	332.0	332.0000288992489	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.1142257366756845	601.0	601.0000380446972	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	8.737212219844748	1.0	1.0001673868883993	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.119401862839737	0.0	3.642239490388266E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.6593329696835	0.0	3.489768626391814E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.1243455485408296	165.0	165.00006612578	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	2.806751387428783	143.0	143.00004515422128	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	3.735096014214495	15.0	15.000081818245862	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.176161938651633	5.0	5.000116634956569	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+default	[-syll][-voice]	14.687840257355697	0.0	2.478846316489532E-4	62135.95481612447	62135.96375822511	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+default	[+cons,+sonorant,+dor][+sonorant]	2.861339021359031	57.0	57.000045379089975	61488.652053389094	61488.661806317396	null	(N)(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N)
+default	[-nas][-delrel,+voice,-sg]	1.1629377785443056	554.0	554.0000253239755	61047.220717486576	61047.23080755426	null	(y|w|i|e|a|o|u|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(b|d|dy|g)
+default	[-wb][+delrel,+lab]	2.0761891127908214	87.0	87.00003313338502	60649.09291336219	60649.10317277526	null	(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(pf|bv)
+default	[+wb][-syll,+sonorant]	1.0302003511086595	841.0	841.000027145351	60283.585972038076	60283.596264735774	null	(<#|#>)(y|w|r|m|mh|n|nh|ny|N)
+
+number of constraints: 24
+
+making sample ...
+sample size: 50000 (number of distinct strings: 43050)
+done
+Searching constraints on projection default (maximum constraint length = 2, gamma = 0.0) ...
+	best constraint: [+cons,+lab][+low] gain=265.8145700499228
+	(m|mh|p|pf|f|v|vh|b|bh|bv)(a)
+	(# constraints pruned by (O-E)>=0 : 7537)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [9.737347111732138]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36941.12005735042	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.215812702968527	1113.0	1113.0000491999003	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.3640604271299726	526.0	526.0000542753131	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.7933666015778084	2827.0	2827.000002510154	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.4157270579861297	3521.0	3521.0000010573262	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	2.9277602277091024	117.0	117.00005770017901	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.0	3308.0	3063.504133881865	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2574.133021036502	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.43824476726744244	2688.0	2688.0000217819716	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	1.0990009785192298	509.0	509.00002249605114	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.4270637904904286	332.0	332.00002775735703	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.1093029452365188	601.0	601.000019764604	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	8.792955817708702	1.0	1.0001733022923138	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.283161205199047	0.0	3.634787642743874E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.791513273403798	0.0	3.559613666749295E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.246697622646394	165.0	165.00006328200905	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	2.8405816508409685	143.0	143.0000565227401	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	3.794014903725558	15.0	15.00007675397822	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.201511558478453	5.0	5.00010180092162	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+default	[-syll][-voice]	14.618575385874195	0.0	2.85038697155917E-4	62135.95481612447	62135.96375822511	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+default	[+cons,+sonorant,+dor][+sonorant]	2.942090776139216	57.0	57.000058434938914	61488.652053389094	61488.661806317396	null	(N)(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N)
+default	[-nas][-delrel,+voice,-sg]	1.1821066199879287	554.0	554.0000241157063	61047.220717486576	61047.23080755426	null	(y|w|i|e|a|o|u|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(b|d|dy|g)
+default	[-wb][+delrel,+lab]	1.8822951080246666	87.0	87.00003308205935	60649.09291336219	60649.10317277526	null	(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(pf|bv)
+default	[+wb][-syll,+sonorant]	1.0431476372288457	841.0	841.000025669511	60283.585972038076	60283.596264735774	null	(<#|#>)(y|w|r|m|mh|n|nh|ny|N)
+default	[+cons,+lab][+low]	0.8713346062363122	899.0	899.0000076638929	59966.000475357665	59966.01089409997	null	(m|mh|p|pf|f|v|vh|b|bh|bv)(a)
+
+number of constraints: 25
+
+making sample ...
+sample size: 50000 (number of distinct strings: 42560)
+done
+Searching constraints on projection default (maximum constraint length = 2, gamma = 0.0) ...
+	best constraint: [+wb][+voice,-sg] gain=213.57737365555258
+	(<#|#>)(v|b|bv|d|dz|dy|g)
+	(# constraints pruned by (O-E)>=0 : 7570)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [9.423258862418532]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36935.74486754092	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.310206825179155	1113.0	1113.0000418128523	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.4485128225257546	526.0	526.0000509669673	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.7873050956520022	2827.0	2827.0000133257886	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.3693542855146776	3521.0	3520.999972370397	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	2.936272024160667	117.0	117.0000589746183	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.0	3308.0	3078.575274218314	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2557.4892753709573	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.4359471138833888	2688.0	2688.000024245946	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	1.08997477725735	509.0	509.00002470565795	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.5435901845881876	332.0	332.0000276023543	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.271294144787414	601.0	601.0000182968238	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	8.79764497177137	1.0	1.0001764349856808	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.283159986492805	0.0	3.6481499192641533E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.791514776584865	0.0	3.5685270106533453E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.257255269208221	165.0	165.00006639390472	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	3.1404101963500053	143.0	143.0000604496723	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	3.8031734745977324	15.0	15.00007319277102	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.210106269130401	5.0	5.000095410945514	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+default	[-syll][-voice]	14.618561232311414	0.0	2.826810377155754E-4	62135.95481612447	62135.96375822511	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+default	[+cons,+sonorant,+dor][+sonorant]	2.9488877654570906	57.0	57.00005840618533	61488.652053389094	61488.661806317396	null	(N)(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N)
+default	[-nas][-delrel,+voice,-sg]	1.2052216055648406	554.0	554.0000245815053	61047.220717486576	61047.23080755426	null	(y|w|i|e|a|o|u|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(b|d|dy|g)
+default	[-wb][+delrel,+lab]	1.895648724985274	87.0	87.0000408270368	60649.09291336219	60649.10317277526	null	(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(pf|bv)
+default	[+wb][-syll,+sonorant]	1.3408803454984788	841.0	841.000028697333	60283.585972038076	60283.596264735774	null	(<#|#>)(y|w|r|m|mh|n|nh|ny|N)
+default	[+cons,+lab][+low]	0.8737671029198153	899.0	899.00001534022	59966.000475357665	59966.01089409997	null	(m|mh|p|pf|f|v|vh|b|bh|bv)(a)
+default	[+wb][+voice,-sg]	0.8092947147061152	1006.0	1006.00002883042	59714.7798318714	59714.7903022675	null	(<#|#>)(v|b|bv|d|dz|dy|g)
+
+number of constraints: 26
+
+making sample ...
+sample size: 50000 (number of distinct strings: 42299)
+done
+Searching constraints on projection default (maximum constraint length = 2, gamma = 0.0) ...
+	best constraint: [+sonorant,-sg,+ant][+low] gain=172.30175631806583
+	(n)(a)
+	(# constraints pruned by (O-E)>=0 : 7752)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [9.166528490738365]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36898.47786316688	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.3871758422497122	1113.0	1113.0000475993954	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.49680814792782	526.0	526.0000476921849	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.8429753598334486	2827.0	2826.999998751905	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.45077655597751254	3521.0	3521.000024436006	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	3.0271917019194117	117.0	117.00005884079118	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.0	3308.0	2804.791485158979	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2760.154550119572	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.4445072818179039	2688.0	2688.000013268263	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	1.164181432189811	509.0	509.0000277367331	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.5496601689629834	332.0	332.0000264596288	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.2698950951318377	601.0	601.0000237327133	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	8.781768097071263	1.0	1.0001754198263983	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.344791248178755	0.0	3.6640837317819893E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.873689756762605	0.0	3.572806748001602E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.3376983887973553	165.0	165.000065826866	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	3.196529979709156	143.0	143.0000650596986	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	3.862322495750799	15.0	15.00007501808734	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.235003236628396	5.0	5.00010419816343	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+default	[-syll][-voice]	14.653338497964358	0.0	2.954739314685971E-4	62135.95481612447	62135.96375822511	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+default	[+cons,+sonorant,+dor][+sonorant]	3.036322870371454	57.0	57.00006136584636	61488.652053389094	61488.661806317396	null	(N)(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N)
+default	[-nas][-delrel,+voice,-sg]	1.2563149643044111	554.0	554.000024102327	61047.220717486576	61047.23080755426	null	(y|w|i|e|a|o|u|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(b|d|dy|g)
+default	[-wb][+delrel,+lab]	1.8941538605431978	87.0	87.00003744800287	60649.09291336219	60649.10317277526	null	(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(pf|bv)
+default	[+wb][-syll,+sonorant]	1.3531303240019237	841.0	841.000033733604	60283.585972038076	60283.596264735774	null	(<#|#>)(y|w|r|m|mh|n|nh|ny|N)
+default	[+cons,+lab][+low]	0.9437789960911241	899.0	899.0000204189547	59966.000475357665	59966.01089409997	null	(m|mh|p|pf|f|v|vh|b|bh|bv)(a)
+default	[+wb][+voice,-sg]	0.8137317377908012	1006.0	1006.0000154240245	59714.7798318714	59714.7903022675	null	(<#|#>)(v|b|bv|d|dz|dy|g)
+default	[+sonorant,-sg,+ant][+low]	1.0808699879586352	241.0	241.00003091337442	59532.608076523706	59532.618656879946	null	(n)(a)
+
+number of constraints: 27
+
+making sample ...
+sample size: 50000 (number of distinct strings: 41701)
+done
+Searching constraints on projection default (maximum constraint length = 2, gamma = 0.0) ...
+Searching constraints on projection default (maximum constraint length = 3, gamma = 0.0) ...
+	best constraint: [+high][][-high,-low] gain=590.7586537069566
+	(y|w|i|u)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+	(# constraints pruned by (O-E)>=0 : 484245)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [9.090482204862752]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36838.8732458506	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.388693029700342	1113.0	1113.000021529103	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.4938495172004833	526.0	526.0000405123133	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.8394863755752533	2827.0	2827.0004435772094	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.4596605635009191	3521.0	3520.9995196841182	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	3.0493470291004554	117.0	117.00014491217571	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.0	3308.0	2816.5269267653184	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2801.867126130222	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.31049461454473976	2688.0	2687.9997599454973	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	1.1696885143279339	509.0	509.0000642581	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.5511702285686575	332.0	331.99996515831185	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.2575374157021637	601.0	600.9998771761364	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	8.879103489730266	1.0	1.000149348045512	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.344846569848784	0.0	3.7996324569206124E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.873467145829135	0.0	3.0486008866374405E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.389094860766884	165.0	165.00001271550062	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	3.2398813749183395	143.0	143.00004588463335	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	3.9524357441048745	15.0	15.000067663974114	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.332181946161056	5.0	5.000037652113285	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+default	[-syll][-voice]	14.65346979909065	0.0	3.240736278234135E-4	62135.95481612447	62135.96375822511	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+default	[+cons,+sonorant,+dor][+sonorant]	3.0253665012530564	57.0	57.000121208304144	61488.652053389094	61488.661806317396	null	(N)(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N)
+default	[-nas][-delrel,+voice,-sg]	1.239496989167456	554.0	553.9999566531636	61047.220717486576	61047.23080755426	null	(y|w|i|e|a|o|u|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(b|d|dy|g)
+default	[-wb][+delrel,+lab]	1.8727221290924903	87.0	86.99993586640764	60649.09291336219	60649.10317277526	null	(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(pf|bv)
+default	[+wb][-syll,+sonorant]	1.3734844570762867	841.0	841.0001251461349	60283.585972038076	60283.596264735774	null	(<#|#>)(y|w|r|m|mh|n|nh|ny|N)
+default	[+cons,+lab][+low]	0.9771124663731424	899.0	899.000125739422	59966.000475357665	59966.01089409997	null	(m|mh|p|pf|f|v|vh|b|bh|bv)(a)
+default	[+wb][+voice,-sg]	0.8113252049199847	1006.0	1005.9999371404325	59714.7798318714	59714.7903022675	null	(<#|#>)(v|b|bv|d|dz|dy|g)
+default	[+sonorant,-sg,+ant][+low]	1.0936008639966757	241.0	240.99998818954504	59532.608076523706	59532.618656879946	null	(n)(a)
+default	[+high][][-high,-low]	4.9659647265124605	5.0	5.000071775536121	58913.26628465331	58913.27715203218	null	(y|w|i|u)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+
+number of constraints: 28
+
+making sample ...
+sample size: 50000 (number of distinct strings: 40911)
+done
+Searching constraints on projection default (maximum constraint length = 3, gamma = 0.0) ...
+	best constraint: [-high,-low][][+high] gain=369.82194694082455
+	(e|o)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(y|w|i|u)
+	(# constraints pruned by (O-E)>=0 : 498261)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [9.013877092854214]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36783.84404491589	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.388969801217271	1113.0	1113.000063374011	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.4923317990910454	526.0	526.0000374248599	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.8051436513577778	2827.0	2827.000033372121	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.4692460153238084	3521.0	3520.999963422436	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	3.0272517424287275	117.0	117.00006364253069	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.0	3308.0	2821.696644293631	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2848.746900459754	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.18531189687677554	2688.0	2687.99996181318	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	1.1791659459250312	509.0	509.0000271806956	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.5532386224986012	332.0	332.0000390572503	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.2421487307767327	601.0	600.9999973320352	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	8.984272528425926	1.0	1.000177795292427	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.43021322074023	0.0	3.643879843549669E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.68997639511574	0.0	3.521196756040699E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.4478748475016867	165.0	165.00006688788966	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	3.246275450737182	143.0	143.00006905335067	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	4.053326868836843	15.0	15.000075179169189	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.436867949429329	5.0	5.0000847643124615	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+default	[-syll][-voice]	14.845975414522414	0.0	2.974773224818103E-4	62135.95481612447	62135.96375822511	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+default	[+cons,+sonorant,+dor][+sonorant]	3.0149440090753767	57.0	57.00005671050516	61488.652053389094	61488.661806317396	null	(N)(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N)
+default	[-nas][-delrel,+voice,-sg]	1.2234871770652915	554.0	554.0000186758607	61047.220717486576	61047.23080755426	null	(y|w|i|e|a|o|u|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(b|d|dy|g)
+default	[-wb][+delrel,+lab]	1.8602973506935467	87.0	87.00004067128226	60649.09291336219	60649.10317277526	null	(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(pf|bv)
+default	[+wb][-syll,+sonorant]	1.3860123969158287	841.0	841.0000081404099	60283.585972038076	60283.596264735774	null	(<#|#>)(y|w|r|m|mh|n|nh|ny|N)
+default	[+cons,+lab][+low]	1.0436706327173173	899.0	899.0000345979038	59966.000475357665	59966.01089409997	null	(m|mh|p|pf|f|v|vh|b|bh|bv)(a)
+default	[+wb][+voice,-sg]	0.8093122388816366	1006.0	1006.0000310615443	59714.7798318714	59714.7903022675	null	(<#|#>)(v|b|bv|d|dz|dy|g)
+default	[+sonorant,-sg,+ant][+low]	1.1194623351691686	241.0	241.0000291960901	59532.608076523706	59532.618656879946	null	(n)(a)
+default	[+high][][-high,-low]	5.16792317330602	5.0	5.00009380167999	58913.26628465331	58913.27715203218	null	(y|w|i|u)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+default	[-high,-low][][+high]	1.6149786405805133	190.0	190.00003721679056	58532.14620374164	58532.15718130878	null	(e|o)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(y|w|i|u)
+
+number of constraints: 29
+
+making sample ...
+sample size: 50000 (number of distinct strings: 40401)
+done
+Searching constraints on projection default (maximum constraint length = 3, gamma = 0.0) ...
+	best constraint: [+low][][-high,-low] gain=302.9064151689959
+	(a)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+	(# constraints pruned by (O-E)>=0 : 506691)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [8.968637153974997]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36744.374746893365	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.3787731364213123	1113.0	1113.000294749378	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.489856296679223	526.0	525.9997893906947	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.8373746699091406	2827.0	2827.0011343246492	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.4637742098526605	3521.0	3520.997863646341	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	3.037495770616532	117.0	117.00009716655411	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.0	3308.0	2856.6677571989894	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2844.8452423910935	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.12869256880036506	2688.0	2687.9994832518682	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	1.1738465099947377	509.0	509.0000749262709	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.5537109718331334	332.0	331.99987369200505	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.2334545230481087	601.0	600.9995712012102	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	9.042247260106846	1.0	1.0001307748644075	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.430189720914164	0.0	3.678007873211059E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.688802390944282	0.0	3.135501789834645E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.464650521707403	165.0	165.00006817190635	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	3.2748045233654146	143.0	143.00014349517963	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	4.0904580577819445	15.0	15.000106081696543	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.4947776571586315	5.0	5.000319690565105	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+default	[-syll][-voice]	14.846387391314128	0.0	3.11043169472691E-4	62135.95481612447	62135.96375822511	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+default	[+cons,+sonorant,+dor][+sonorant]	2.9964463071202982	57.0	57.00010779283197	61488.652053389094	61488.661806317396	null	(N)(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N)
+default	[-nas][-delrel,+voice,-sg]	1.208870611695898	554.0	554.0001073267916	61047.220717486576	61047.23080755426	null	(y|w|i|e|a|o|u|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(b|d|dy|g)
+default	[-wb][+delrel,+lab]	1.841166208726155	87.0	86.99992507334873	60649.09291336219	60649.10317277526	null	(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(pf|bv)
+default	[+wb][-syll,+sonorant]	1.4123929509238629	841.0	841.0002862563102	60283.585972038076	60283.596264735774	null	(<#|#>)(y|w|r|m|mh|n|nh|ny|N)
+default	[+cons,+lab][+low]	0.9781154681753134	899.0	898.9992318230544	59966.000475357665	59966.01089409997	null	(m|mh|p|pf|f|v|vh|b|bh|bv)(a)
+default	[+wb][+voice,-sg]	0.8085487564070466	1006.0	1005.9999507749595	59714.7798318714	59714.7903022675	null	(<#|#>)(v|b|bv|d|dz|dy|g)
+default	[+sonorant,-sg,+ant][+low]	1.0985693725897874	241.0	241.00013730082895	59532.608076523706	59532.618656879946	null	(n)(a)
+default	[+high][][-high,-low]	5.26724069998644	5.0	5.000472629631135	58913.26628465331	58913.27715203218	null	(y|w|i|u)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+default	[-high,-low][][+high]	1.7087127674604694	190.0	190.0003067852623	58532.14620374164	58532.15718130878	null	(e|o)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(y|w|i|u)
+default	[+low][][-high,-low]	3.9582700415513834	7.0	7.000225889328522	58220.88946297891	58220.90062997606	null	(a)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+
+number of constraints: 30
+
+making sample ...
+sample size: 50000 (number of distinct strings: 40013)
+done
+Searching constraints on projection default (maximum constraint length = 3, gamma = 0.0) ...
+	best constraint: [+wb][-nas,+dor][-back] gain=262.44647901812885
+	(<#|#>)(w|k|g)(y|i|e)
+	(# constraints pruned by (O-E)>=0 : 510052)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [8.736779299705034]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36721.03930147948	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.463533776014695	1113.0	1113.0000435066095	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.5285662934748108	526.0	526.0000630130673	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.9204204999714327	2827.0	2827.000026480098	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.544972818630176	3521.0	3521.000021464675	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	3.0373780601455436	117.0	117.00005021030104	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.0	3308.0	2913.113692155095	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2709.33666864423	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.11172198231160532	2688.0	2687.999956933145	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	1.205681222100116	509.0	509.0000025362633	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.5566411621633554	332.0	332.0000294117881	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.240382781336229	601.0	601.0000195091925	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	9.062099175414904	1.0	1.0001595392506883	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.41968054173136	0.0	3.6881971357245296E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.58278304903459	0.0	3.5252503484629937E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.4892537595380477	165.0	165.0000639448368	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	3.410279439801549	143.0	143.00008086936177	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	4.108820342435789	15.0	15.000075211944488	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.523515577888338	5.0	5.000106887319124	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+default	[-syll][-voice]	14.896891126429342	0.0	2.9893102815581015E-4	62135.95481612447	62135.96375822511	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+default	[+cons,+sonorant,+dor][+sonorant]	3.0383537837740415	57.0	57.00005863839134	61488.652053389094	61488.661806317396	null	(N)(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N)
+default	[-nas][-delrel,+voice,-sg]	1.2106502888902941	554.0	554.0000199412128	61047.220717486576	61047.23080755426	null	(y|w|i|e|a|o|u|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(b|d|dy|g)
+default	[-wb][+delrel,+lab]	1.7979202128071274	87.0	87.00003070411611	60649.09291336219	60649.10317277526	null	(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(pf|bv)
+default	[+wb][-syll,+sonorant]	1.5161242505352681	841.0	841.0000033959343	60283.585972038076	60283.596264735774	null	(<#|#>)(y|w|r|m|mh|n|nh|ny|N)
+default	[+cons,+lab][+low]	0.9821393422269215	899.0	899.0000424618232	59966.000475357665	59966.01089409997	null	(m|mh|p|pf|f|v|vh|b|bh|bv)(a)
+default	[+wb][+voice,-sg]	0.7956060376757744	1006.0	1006.0000148582275	59714.7798318714	59714.7903022675	null	(<#|#>)(v|b|bv|d|dz|dy|g)
+default	[+sonorant,-sg,+ant][+low]	1.1410238087678006	241.0	241.00002401409165	59532.608076523706	59532.618656879946	null	(n)(a)
+default	[+high][][-high,-low]	5.249883991242993	5.0	5.000102802832254	58913.26628465331	58913.27715203218	null	(y|w|i|u)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+default	[-high,-low][][+high]	1.6886832596921129	190.0	190.00002833537147	58532.14620374164	58532.15718130878	null	(e|o)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(y|w|i|u)
+default	[+low][][-high,-low]	4.057479686609879	7.0	7.000090199042306	58220.88946297891	58220.90062997606	null	(a)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+default	[+wb][-nas,+dor][-back]	2.4151393315304395	39.0	39.00005556191766	57947.56345172871	57947.57468944519	null	(<#|#>)(w|k|g)(y|i|e)
+
+number of constraints: 31
+
+making sample ...
+sample size: 50000 (number of distinct strings: 39584)
+done
+Searching constraints on projection default (maximum constraint length = 3, gamma = 0.0) ...
+	best constraint: [-cont,+cor][-nas,+dor] gain=196.69452225279264
+	(n|nh|ny|t|d|dh|ts|dz|ch|j|tsv|dzv|dy|ty)(w|k|g)
+	(# constraints pruned by (O-E)>=0 : 514559)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [8.711544126037357]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36742.107014043904	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.4585652772273487	1113.0	1112.9998920793323	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.5372898155114947	526.0	525.9993854308065	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.8479816008122449	2827.0	2826.999481627937	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.5228019296681358	3521.0	3521.001045457366	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	3.052062122989382	117.0	117.00001145983619	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.0	3308.0	2816.8739707317563	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2631.7931156996565	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.1351909261908729	2688.0	2687.998960035743	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	1.1667355943308402	509.0	509.00039733595383	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.5942107692936978	332.0	331.9999662751638	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.266911495792192	601.0	601.0001294362379	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	8.996994491190769	1.0	1.0002021864941186	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.392827855000977	0.0	3.701920682082464E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.582068431430233	0.0	3.5169362292166605E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.4683067920142543	165.0	165.0000060678503	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	3.328853947182545	143.0	142.99998688615966	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	4.072865049485369	15.0	15.000047544433938	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.477491112477529	5.0	5.000279893219015	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+default	[-syll][-voice]	14.77290601931586	0.0	2.9541965138154446E-4	62135.95481612447	62135.96375822511	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+default	[+cons,+sonorant,+dor][+sonorant]	3.080083502791734	57.0	57.00004220821083	61488.652053389094	61488.661806317396	null	(N)(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N)
+default	[-nas][-delrel,+voice,-sg]	1.2566018234043257	554.0	554.0003548635482	61047.220717486576	61047.23080755426	null	(y|w|i|e|a|o|u|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(b|d|dy|g)
+default	[-wb][+delrel,+lab]	1.8755136189374686	87.0	87.00007265446355	60649.09291336219	60649.10317277526	null	(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(pf|bv)
+default	[+wb][-syll,+sonorant]	1.4498713066864573	841.0	841.0004830113038	60283.585972038076	60283.596264735774	null	(<#|#>)(y|w|r|m|mh|n|nh|ny|N)
+default	[+cons,+lab][+low]	1.0561276970255908	899.0	899.0003940632428	59966.000475357665	59966.01089409997	null	(m|mh|p|pf|f|v|vh|b|bh|bv)(a)
+default	[+wb][+voice,-sg]	0.8013330510140957	1006.0	1006.0000749894747	59714.7798318714	59714.7903022675	null	(<#|#>)(v|b|bv|d|dz|dy|g)
+default	[+sonorant,-sg,+ant][+low]	1.1821565734984358	241.0	241.00012016495103	59532.608076523706	59532.618656879946	null	(n)(a)
+default	[+high][][-high,-low]	5.290873045766685	5.0	5.000077866166256	58913.26628465331	58913.27715203218	null	(y|w|i|u)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+default	[-high,-low][][+high]	1.7072152896829533	190.0	190.0001009542936	58532.14620374164	58532.15718130878	null	(e|o)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(y|w|i|u)
+default	[+low][][-high,-low]	4.078047845435153	7.0	6.999830191172903	58220.88946297891	58220.90062997606	null	(a)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+default	[+wb][-nas,+dor][-back]	2.408790864234912	39.0	39.0000346866685	57947.56345172871	57947.57468944519	null	(<#|#>)(w|k|g)(y|i|e)
+default	[-cont,+cor][-nas,+dor]	2.229181626748511	35.0	34.999765787177395	57745.63389262469	57745.64512040514	null	(n|nh|ny|t|d|dh|ts|dz|ch|j|tsv|dzv|dy|ty)(w|k|g)
+
+number of constraints: 32
+
+making sample ...
+sample size: 50000 (number of distinct strings: 39200)
+done
+Searching constraints on projection default (maximum constraint length = 3, gamma = 0.0) ...
+	best constraint: [-high,-back][][-high,-low,+back] gain=193.85067315708133
+	(e)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(o)
+	(# constraints pruned by (O-E)>=0 : 513122)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [8.737054573067008]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36726.01296209066	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.449780674640414	1113.0	1112.956539542638	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.5329873708088533	526.0	525.8589374326873	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.8385225679183547	2827.0	2827.2415722330975	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.5166523919279655	3521.0	3521.2171195850538	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	3.0520363910144646	117.0	117.00315646155993	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.0	3308.0	2815.8362774598654	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2656.5759555788504	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.028375946507840026	2688.0	2687.9921841889154	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	1.1641183478080577	509.0	508.8992406151094	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.5952975927837107	332.0	332.06932886675634	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.2621354620950735	601.0	601.0336249860926	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	9.025945278046452	1.0	1.0013735321672899	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.39294701108065	0.0	3.785364117926002E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.581984738292682	0.0	3.441635382172996E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.498859373937569	165.0	165.0231301990205	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	3.3415667527011683	143.0	142.97733009524075	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	4.1298323235462675	15.0	15.077929565506969	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.504300144020315	5.0	4.99960595084352	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+default	[-syll][-voice]	14.773002793735163	0.0	3.041240346327298E-4	62135.95481612447	62135.96375822511	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+default	[+cons,+sonorant,+dor][+sonorant]	3.072134544122562	57.0	56.97484086890424	61488.652053389094	61488.661806317396	null	(N)(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N)
+default	[-nas][-delrel,+voice,-sg]	1.2510263550546508	554.0	553.9669711443332	61047.220717486576	61047.23080755426	null	(y|w|i|e|a|o|u|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(b|d|dy|g)
+default	[-wb][+delrel,+lab]	1.8733939198841227	87.0	87.02774278369675	60649.09291336219	60649.10317277526	null	(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(pf|bv)
+default	[+wb][-syll,+sonorant]	1.4477628760882124	841.0	840.9043192183656	60283.585972038076	60283.596264735774	null	(<#|#>)(y|w|r|m|mh|n|nh|ny|N)
+default	[+cons,+lab][+low]	1.062549466082548	899.0	898.9608078446578	59966.000475357665	59966.01089409997	null	(m|mh|p|pf|f|v|vh|b|bh|bv)(a)
+default	[+wb][+voice,-sg]	0.8018028349952868	1006.0	1006.1074966477066	59714.7798318714	59714.7903022675	null	(<#|#>)(v|b|bv|d|dz|dy|g)
+default	[+sonorant,-sg,+ant][+low]	1.1815938227845637	241.0	240.94041924744832	59532.608076523706	59532.618656879946	null	(n)(a)
+default	[+high][][-high,-low]	5.386649261454429	5.0	5.000533185202537	58913.26628465331	58913.27715203218	null	(y|w|i|u)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+default	[-high,-low][][+high]	1.8033717262841826	190.0	189.96678275890335	58532.14620374164	58532.15718130878	null	(e|o)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(y|w|i|u)
+default	[+low][][-high,-low]	4.16717951389632	7.0	7.0231975314841755	58220.88946297891	58220.90062997606	null	(a)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+default	[+wb][-nas,+dor][-back]	2.3110857620271728	39.0	39.05098416448679	57947.56345172871	57947.57468944519	null	(<#|#>)(w|k|g)(y|i|e)
+default	[-cont,+cor][-nas,+dor]	2.2505813496529155	35.0	35.00240926083779	57745.63389262469	57745.64512040514	null	(n|nh|ny|t|d|dh|ts|dz|ch|j|tsv|dzv|dy|ty)(w|k|g)
+default	[-high,-back][][-high,-low,+back]	8.552867158203094	0.0	0.044365564847919786	57538.62816134379	57538.64015195708	null	(e)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(o)
+
+number of constraints: 33
+
+making sample ...
+sample size: 50000 (number of distinct strings: 38837)
+done
+Searching constraints on projection default (maximum constraint length = 3, gamma = 0.0) ...
+	best constraint: [-syll][+delrel,-sg] gain=181.17026156905172
+	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(bv|ts|dz)
+	(# constraints pruned by (O-E)>=0 : 519966)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [8.731126573640346]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36757.15343123782	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.457093970766913	1113.0	1113.041990562176	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.5440154414984946	526.0	525.9784442861517	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.8337547956081017	2827.0	2826.397789308504	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.4587468297637036	3521.0	3521.0722894736	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	3.041032831658856	117.0	117.01577952387274	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.0	3308.0	2704.38416538003	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2620.656601903547	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.035313459184810075	2688.0	2687.5480885019674	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	1.1568809544460248	509.0	509.0347158742471	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.649040990540696	332.0	332.16545238566044	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.3305023166448697	601.0	601.1300594221821	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	8.810881264587861	1.0	0.9974202455756255	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.392706663377457	0.0	3.5019957180973296E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.581804624204032	0.0	3.384569272413885E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.4496147050797004	165.0	164.97352205850902	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	3.2362387673308466	143.0	142.9382902964036	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	4.073630380360428	15.0	14.991288817331602	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.401456993591605	5.0	5.01267921770757	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+default	[-syll][-voice]	14.772979542450534	0.0	2.937362467603899E-4	62135.95481612447	62135.96375822511	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+default	[+cons,+sonorant,+dor][+sonorant]	3.1013084474462334	57.0	56.996701672826866	61488.652053389094	61488.661806317396	null	(N)(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N)
+default	[-nas][-delrel,+voice,-sg]	1.292622883089324	554.0	553.9518551245765	61047.220717486576	61047.23080755426	null	(y|w|i|e|a|o|u|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(b|d|dy|g)
+default	[-wb][+delrel,+lab]	1.7391971840387521	87.0	87.07277026694351	60649.09291336219	60649.10317277526	null	(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(pf|bv)
+default	[+wb][-syll,+sonorant]	1.372728691820515	841.0	841.051554128445	60283.585972038076	60283.596264735774	null	(<#|#>)(y|w|r|m|mh|n|nh|ny|N)
+default	[+cons,+lab][+low]	1.0816309624454585	899.0	898.8700449776733	59966.000475357665	59966.01089409997	null	(m|mh|p|pf|f|v|vh|b|bh|bv)(a)
+default	[+wb][+voice,-sg]	0.8179805887637367	1006.0	1005.7832270735213	59714.7798318714	59714.7903022675	null	(<#|#>)(v|b|bv|d|dz|dy|g)
+default	[+sonorant,-sg,+ant][+low]	1.2070014283638522	241.0	240.96808551641362	59532.608076523706	59532.618656879946	null	(n)(a)
+default	[+high][][-high,-low]	5.420100480168035	5.0	4.995409812180985	58913.26628465331	58913.27715203218	null	(y|w|i|u)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+default	[-high,-low][][+high]	1.834961364397874	190.0	190.0429710934547	58532.14620374164	58532.15718130878	null	(e|o)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(y|w|i|u)
+default	[+low][][-high,-low]	4.198301044209483	7.0	7.0012846420492085	58220.88946297891	58220.90062997606	null	(a)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+default	[+wb][-nas,+dor][-back]	2.308105982790708	39.0	39.0048707347291	57947.56345172871	57947.57468944519	null	(<#|#>)(w|k|g)(y|i|e)
+default	[-cont,+cor][-nas,+dor]	2.1884688530764365	35.0	35.02088100412741	57745.63389262469	57745.64512040514	null	(n|nh|ny|t|d|dh|ts|dz|ch|j|tsv|dzv|dy|ty)(w|k|g)
+default	[-high,-back][][-high,-low,+back]	9.073624470323255	0.0	0.02711247942785933	57538.62816134379	57538.64015195708	null	(e)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(o)
+default	[-syll][+delrel,-sg]	8.648652013454543	0.0	0.034556386502745555	57348.840509744194	57348.8532800471	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(bv|ts|dz)
+
+number of constraints: 34
+
+making sample ...
+sample size: 50000 (number of distinct strings: 38630)
+done
+Searching constraints on projection default (maximum constraint length = 3, gamma = 0.0) ...
+	best constraint: [-delrel,+cor][][+wb] gain=181.6233997287747
+	(t|d|dh|dy|ty)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+	(# constraints pruned by (O-E)>=0 : 515173)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [8.759155608446026]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36799.66012687729	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.427347689837108	1113.0	1112.9829473832522	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.5130312769359193	526.0	525.9939179377933	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.7928340577557659	2827.0	2827.1545915245947	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.2559644875175239	3521.0	3520.959615675142	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	3.072726104673376	117.0	117.03054858238805	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.0	3308.0	2645.294039174539	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2625.2303463784074	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.03761033647674104	2688.0	2688.011720418557	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	1.128316220223008	509.0	508.9821486638159	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.8171832822174814	332.0	331.97271089723927	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.5293727775341144	601.0	601.0444913285093	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	8.80778833846409	1.0	0.9973049221542375	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.399443885332694	0.0	4.0206179119074974E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.581326895512316	0.0	3.491826966383727E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.4903516706566653	165.0	165.01208134900796	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	3.1745706219834644	143.0	143.07006230059528	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	4.0126382329820185	15.0	14.99309605354853	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.339401547297597	5.0	4.993430870109343	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+default	[-syll][-voice]	14.768862390371243	0.0	2.741203913741266E-4	62135.95481612447	62135.96375822511	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+default	[+cons,+sonorant,+dor][+sonorant]	3.128183037410447	57.0	56.9877318727831	61488.652053389094	61488.661806317396	null	(N)(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N)
+default	[-nas][-delrel,+voice,-sg]	1.2115785729519997	554.0	554.0272495278566	61047.220717486576	61047.23080755426	null	(y|w|i|e|a|o|u|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(b|d|dy|g)
+default	[-wb][+delrel,+lab]	1.7574679691897102	87.0	87.09084121040986	60649.09291336219	60649.10317277526	null	(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(pf|bv)
+default	[+wb][-syll,+sonorant]	1.3176116924532637	841.0	840.9204716570711	60283.585972038076	60283.596264735774	null	(<#|#>)(y|w|r|m|mh|n|nh|ny|N)
+default	[+cons,+lab][+low]	1.1508670084583164	899.0	899.0340378334	59966.000475357665	59966.01089409997	null	(m|mh|p|pf|f|v|vh|b|bh|bv)(a)
+default	[+wb][+voice,-sg]	0.8586100054743631	1006.0	1006.0135335942662	59714.7798318714	59714.7903022675	null	(<#|#>)(v|b|bv|d|dz|dy|g)
+default	[+sonorant,-sg,+ant][+low]	1.2597603800845032	241.0	241.03135802111035	59532.608076523706	59532.618656879946	null	(n)(a)
+default	[+high][][-high,-low]	5.432741464859537	5.0	5.011022125559639	58913.26628465331	58913.27715203218	null	(y|w|i|u)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+default	[-high,-low][][+high]	1.85784605829617	190.0	190.04556881031417	58532.14620374164	58532.15718130878	null	(e|o)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(y|w|i|u)
+default	[+low][][-high,-low]	4.209002289508065	7.0	6.96054082335911	58220.88946297891	58220.90062997606	null	(a)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+default	[+wb][-nas,+dor][-back]	2.246948883461189	39.0	39.05165433368643	57947.56345172871	57947.57468944519	null	(<#|#>)(w|k|g)(y|i|e)
+default	[-cont,+cor][-nas,+dor]	2.2818757035032147	35.0	34.918126877276094	57745.63389262469	57745.64512040514	null	(n|nh|ny|t|d|dh|ts|dz|ch|j|tsv|dzv|dy|ty)(w|k|g)
+default	[-high,-back][][-high,-low,+back]	11.463658487974746	0.0	0.0025433806375663474	57538.62816134379	57538.64015195708	null	(e)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(o)
+default	[-syll][+delrel,-sg]	11.636343929934206	0.0	0.002126089468730144	57348.840509744194	57348.8532800471	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(bv|ts|dz)
+default	[-delrel,+cor][][+wb]	1.23319415402049	261.0	261.0708059812976	57123.45241426849	57123.4662990093	null	(t|d|dh|dy|ty)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+
+number of constraints: 35
+
+making sample ...
+sample size: 50000 (number of distinct strings: 38230)
+done
+Searching constraints on projection default (maximum constraint length = 3, gamma = 0.0) ...
+	best constraint: [-ant][][+wb] gain=197.9278538230703
+	(ny|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+	(# constraints pruned by (O-E)>=0 : 514814)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [8.75122712326915]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36819.1130130939	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	2.065393182151079	1113.0	1112.9989293438687	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.5127185305955195	526.0	525.9988616947272	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.7652527494307231	2827.0	2827.001276649788	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.2495851988844542	3521.0	3520.99680034303	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	3.1370767042054433	117.0	117.00119943876678	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.0	3308.0	2562.9144550579767	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2675.91187367043	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.03555490381247767	2688.0	2687.9970416714687	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	0.7420061474029146	509.0	509.0000691867451	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.8341651900277287	332.0	331.9997323539145	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.5464725903352283	601.0	600.9986769866852	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	8.821672244176058	1.0	1.000419951047403	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.46826211518716	0.0	4.4670071604002395E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.59383996615153	0.0	3.6709347698130816E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.5763645921405383	165.0	165.00030426880082	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	3.1254372762108535	143.0	142.99918744506965	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	3.9945917885046214	15.0	15.000742170250449	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.373040719200722	5.0	5.0005005077442135	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+default	[-syll][-voice]	14.756941069568134	0.0	2.795596416803355E-4	62135.95481612447	62135.96375822511	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+default	[+cons,+sonorant,+dor][+sonorant]	3.1745671527836836	57.0	56.99996883434332	61488.652053389094	61488.661806317396	null	(N)(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N)
+default	[-nas][-delrel,+voice,-sg]	1.2494650117237909	554.0	553.9995969599887	61047.220717486576	61047.23080755426	null	(y|w|i|e|a|o|u|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(b|d|dy|g)
+default	[-wb][+delrel,+lab]	1.766773420690451	87.0	87.000419065297	60649.09291336219	60649.10317277526	null	(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(pf|bv)
+default	[+wb][-syll,+sonorant]	1.286673283464105	841.0	841.0025345521682	60283.585972038076	60283.596264735774	null	(<#|#>)(y|w|r|m|mh|n|nh|ny|N)
+default	[+cons,+lab][+low]	1.2460957090992986	899.0	899.0001281493325	59966.000475357665	59966.01089409997	null	(m|mh|p|pf|f|v|vh|b|bh|bv)(a)
+default	[+wb][+voice,-sg]	0.8037248169338983	1006.0	1005.9992340120408	59714.7798318714	59714.7903022675	null	(<#|#>)(v|b|bv|d|dz|dy|g)
+default	[+sonorant,-sg,+ant][+low]	1.3487807588747733	241.0	241.0000559694487	59532.608076523706	59532.618656879946	null	(n)(a)
+default	[+high][][-high,-low]	5.435195658391308	5.0	5.000279674286973	58913.26628465331	58913.27715203218	null	(y|w|i|u)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+default	[-high,-low][][+high]	1.8692164677541296	190.0	189.9996111171645	58532.14620374164	58532.15718130878	null	(e|o)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(y|w|i|u)
+default	[+low][][-high,-low]	4.195181732423397	7.0	7.000194335175069	58220.88946297891	58220.90062997606	null	(a)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+default	[+wb][-nas,+dor][-back]	2.1936854044527214	39.0	39.00076684510711	57947.56345172871	57947.57468944519	null	(<#|#>)(w|k|g)(y|i|e)
+default	[-cont,+cor][-nas,+dor]	2.4307134302314894	35.0	34.99959306187234	57745.63389262469	57745.64512040514	null	(n|nh|ny|t|d|dh|ts|dz|ch|j|tsv|dzv|dy|ty)(w|k|g)
+default	[-high,-back][][-high,-low,+back]	12.912432963040779	0.0	6.038845045240325E-4	57538.62816134379	57538.64015195708	null	(e)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(o)
+default	[-syll][+delrel,-sg]	12.929534716876985	0.0	6.371238700054255E-4	57348.840509744194	57348.8532800471	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(bv|ts|dz)
+default	[-delrel,+cor][][+wb]	1.3399513137344576	261.0	260.99959216889977	57123.45241426849	57123.4662990093	null	(t|d|dh|dy|ty)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-ant][][+wb]	1.5646355571664778	217.0	216.99971138708588	56834.065439559185	56834.08004863282	null	(ny|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+
+number of constraints: 36
+
+making sample ...
+sample size: 50000 (number of distinct strings: 37611)
+done
+Searching constraints on projection default (maximum constraint length = 3, gamma = 0.0) ...
+	best constraint: [-nas,+lab][][+wb] gain=219.5069742527386
+	(w|p|pf|f|v|vh|b|bh|bv)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+	(# constraints pruned by (O-E)>=0 : 515787)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [8.92403103587714]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36884.06538159388	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	1.9473452776517775	1113.0	1112.9994289535396	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.5096848507449767	526.0	525.9997346697685	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.4682829207243291	2827.0	2826.9991720811677	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.18229122926692845	3521.0	3521.0020815891294	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	3.1544330801262337	117.0	117.00009370406995	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.0	3308.0	2579.154940983611	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2566.2599353628602	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.04945787717916258	2688.0	2687.9994278469503	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	0.6774471126067825	509.0	508.99969713647926	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.8444308941564458	332.0	331.99977552480647	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.5758777227247638	601.0	601.0002703783076	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	8.840794549676142	1.0	1.0002371802048837	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.851705963138794	0.0	3.839539573005271E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.531703520257484	0.0	3.4100872311105027E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.6117658438583473	165.0	165.00023635371414	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	2.977081746481317	143.0	142.99941196552467	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	3.8859560668266924	15.0	14.999967738193927	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.2987891898086055	5.0	5.000080794958141	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+default	[-syll][-voice]	14.65992059660607	0.0	2.7118243257408925E-4	62135.95481612447	62135.96375822511	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+default	[+cons,+sonorant,+dor][+sonorant]	3.1816758996276255	57.0	57.00100013024908	61488.652053389094	61488.661806317396	null	(N)(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N)
+default	[-nas][-delrel,+voice,-sg]	1.2500636357439625	554.0	554.0002985294545	61047.220717486576	61047.23080755426	null	(y|w|i|e|a|o|u|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(b|d|dy|g)
+default	[-wb][+delrel,+lab]	1.6834516158983588	87.0	87.00003492063252	60649.09291336219	60649.10317277526	null	(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(pf|bv)
+default	[+wb][-syll,+sonorant]	1.1776493800855814	841.0	840.9990580896427	60283.585972038076	60283.596264735774	null	(<#|#>)(y|w|r|m|mh|n|nh|ny|N)
+default	[+cons,+lab][+low]	0.8657487371571211	899.0	898.9997987239354	59966.000475357665	59966.01089409997	null	(m|mh|p|pf|f|v|vh|b|bh|bv)(a)
+default	[+wb][+voice,-sg]	0.8081065379147968	1006.0	1006.0013327492534	59714.7798318714	59714.7903022675	null	(<#|#>)(v|b|bv|d|dz|dy|g)
+default	[+sonorant,-sg,+ant][+low]	1.3982358214132717	241.0	241.00028430495337	59532.608076523706	59532.618656879946	null	(n)(a)
+default	[+high][][-high,-low]	5.46352289326713	5.0	5.000139287698872	58913.26628465331	58913.27715203218	null	(y|w|i|u)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+default	[-high,-low][][+high]	1.8393221316289405	190.0	190.0005080052935	58532.14620374164	58532.15718130878	null	(e|o)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(y|w|i|u)
+default	[+low][][-high,-low]	4.224021606357446	7.0	7.000209067362939	58220.88946297891	58220.90062997606	null	(a)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+default	[+wb][-nas,+dor][-back]	2.0766501745092567	39.0	38.99984583408986	57947.56345172871	57947.57468944519	null	(<#|#>)(w|k|g)(y|i|e)
+default	[-cont,+cor][-nas,+dor]	2.136659102958334	35.0	34.99966519903465	57745.63389262469	57745.64512040514	null	(n|nh|ny|t|d|dh|ts|dz|ch|j|tsv|dzv|dy|ty)(w|k|g)
+default	[-high,-back][][-high,-low,+back]	13.617853919907587	0.0	3.038545600648249E-4	57538.62816134379	57538.64015195708	null	(e)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(o)
+default	[-syll][+delrel,-sg]	13.742087739432874	0.0	2.97223288628588E-4	57348.840509744194	57348.8532800471	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(bv|ts|dz)
+default	[-delrel,+cor][][+wb]	1.4787944848336645	261.0	261.000699095926	57123.45241426849	57123.4662990093	null	(t|d|dh|dy|ty)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-ant][][+wb]	1.7367912612443714	217.0	216.99961079172581	56834.065439559185	56834.08004863282	null	(ny|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-nas,+lab][][+wb]	1.7568519415369257	230.0	230.00041382674507	56478.650716536155	56478.66580998277	null	(w|p|pf|f|v|vh|b|bh|bv)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+
+number of constraints: 37
+
+making sample ...
+sample size: 50000 (number of distinct strings: 37145)
+done
+Searching constraints on projection default (maximum constraint length = 3, gamma = 0.0) ...
+	best constraint: [+delrel,+voice,+cor][][-sonorant] gain=175.99200684937287
+	(dz|j|dzv)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+	(# constraints pruned by (O-E)>=0 : 519771)
+Updating eval ...
+Updating eval ...
+Retraining weights ...
+done
+logZ = [8.976644334659817]
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36871.76345331659	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	1.7711052819419575	1113.0	1113.0000230490873	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.520920571482886	526.0	526.0000501340439	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.45698758344857265	2827.0	2827.000013531974	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.044735827736612395	3521.0	3520.999987145728	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	3.1935283121318316	117.0	117.00006259520534	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.0	3308.0	2626.2963032955527	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2498.29460828053	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.04903964519697372	2688.0	2687.999980168461	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	0.7300605827334155	509.0	509.00002111042323	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.9517091608558597	332.0	332.00003565223665	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.6673997389257922	601.0	601.0000256991663	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	8.86296110838145	1.0	1.0001772402072515	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.931403506652398	0.0	3.7311005445513166E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.516525043109343	0.0	3.5077164027629996E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.6592525832378557	165.0	165.00007462251122	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	2.9614294639267817	143.0	143.00006666242223	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	3.9292799460300336	15.0	15.00006988831359	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.304351368107663	5.0	5.000111881115253	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+default	[-syll][-voice]	14.637583016732094	0.0	2.920787827245296E-4	62135.95481612447	62135.96375822511	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+default	[+cons,+sonorant,+dor][+sonorant]	3.2111555317288367	57.0	57.000062391523954	61488.652053389094	61488.661806317396	null	(N)(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N)
+default	[-nas][-delrel,+voice,-sg]	1.2398283567711181	554.0	554.0000126428432	61047.220717486576	61047.23080755426	null	(y|w|i|e|a|o|u|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(b|d|dy|g)
+default	[-wb][+delrel,+lab]	1.6712871226452979	87.0	87.00003254224825	60649.09291336219	60649.10317277526	null	(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(pf|bv)
+default	[+wb][-syll,+sonorant]	1.142751436349266	841.0	841.0000214607902	60283.585972038076	60283.596264735774	null	(<#|#>)(y|w|r|m|mh|n|nh|ny|N)
+default	[+cons,+lab][+low]	0.8753705814170867	899.0	899.0000143759327	59966.000475357665	59966.01089409997	null	(m|mh|p|pf|f|v|vh|b|bh|bv)(a)
+default	[+wb][+voice,-sg]	0.7279838066109959	1006.0	1006.0000133012373	59714.7798318714	59714.7903022675	null	(<#|#>)(v|b|bv|d|dz|dy|g)
+default	[+sonorant,-sg,+ant][+low]	1.425190463424062	241.0	241.0000298622364	59532.608076523706	59532.618656879946	null	(n)(a)
+default	[+high][][-high,-low]	5.461853823122079	5.0	5.000108626712133	58913.26628465331	58913.27715203218	null	(y|w|i|u)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+default	[-high,-low][][+high]	1.8375814018391412	190.0	190.0000371790073	58532.14620374164	58532.15718130878	null	(e|o)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(y|w|i|u)
+default	[+low][][-high,-low]	4.2179741908755055	7.0	7.000094767707946	58220.88946297891	58220.90062997606	null	(a)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+default	[+wb][-nas,+dor][-back]	2.0659600141133323	39.0	39.00004712810466	57947.56345172871	57947.57468944519	null	(<#|#>)(w|k|g)(y|i|e)
+default	[-cont,+cor][-nas,+dor]	2.2036241330644666	35.0	35.00005630352608	57745.63389262469	57745.64512040514	null	(n|nh|ny|t|d|dh|ts|dz|ch|j|tsv|dzv|dy|ty)(w|k|g)
+default	[-high,-back][][-high,-low,+back]	13.709365482872272	0.0	2.7684783052338524E-4	57538.62816134379	57538.64015195708	null	(e)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(o)
+default	[-syll][+delrel,-sg]	13.882287465533862	0.0	2.8019979113052927E-4	57348.840509744194	57348.8532800471	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(bv|ts|dz)
+default	[-delrel,+cor][][+wb]	1.566046985537015	261.0	261.00003677724266	57123.45241426849	57123.4662990093	null	(t|d|dh|dy|ty)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-ant][][+wb]	1.8024338382624783	217.0	217.00003277547916	56834.065439559185	56834.08004863282	null	(ny|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-nas,+lab][][+wb]	1.7281973773337844	230.0	230.00003486547328	56478.650716536155	56478.66580998277	null	(w|p|pf|f|v|vh|b|bh|bv)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[+delrel,+voice,+cor][][-sonorant]	1.4564498771079022	132.0	132.00003271548027	56270.3091979221	56270.3244146447	null	(dz|j|dzv)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+
+number of constraints: 38
+
+making sample ...
+sample size: 50000 (number of distinct strings: 36798)
+done
+Searching constraints on projection default (maximum constraint length = 3, gamma = 0.0) ...
+training ...
+projection	constraint	weight	observed	expected	dataPlog	objective	heldoutPlog	regex
+default	[]	1.1102230246251565E-16	40131.0	36871.76345701771	105246.14034401158	105246.14034401158	null	(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-sonorant,-ant]	1.771105272535078	1113.0	1113.0000295772559	101017.82174135486	101017.82178219117	null	(ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)
+default	[+sg]	2.520920571266689	526.0	526.0000493108528	97259.90591531583	97259.90602388364	null	(mh|nh|vh|bh|dh|h)
+default	[-nas,+lab]	0.45698758678786366	2827.0	2826.9999957090663	95029.11222122484	95029.11234947658	null	(w|p|pf|f|v|vh|b|bh|bv)
+default	[-sonorant,+ant]	0.04473581728361895	3521.0	3521.000015735078	93241.16917018383	93241.16932630737	null	(t|d|dh|ts|dz|s|z)
+default	[-cons,+cor]	3.1935283111622086	117.0	117.00006199392604	92069.76808971337	92069.76832609865	null	(y)
+default	[+sonorant,-cont]	0.0	3308.0	2626.2962952641346	90470.53068527883	90470.53095847284	null	(m|mh|n|nh|ny|N)
+default	[+cons,+dor]	0.0	3115.0	2498.294600744775	89974.348459926	89974.34876033233	null	(N|k|g)
+default	[-high,-low]	0.04903962937390671	2688.0	2688.000025345881	89304.85497657201	89304.8553250859	null	(e|o)
+default	[-sg,-ant]	0.7300605876821974	509.0	509.00001864879545	89033.17008538097	89033.17043657997	null	(ny|dy|ty)
+default	[+cont,+voice,+cor]	1.9517091582846549	332.0	332.00003848816516	88804.45877476259	88804.45912502999	null	(z|zh|zv)
+default	[-voice,+ant,-secart]	1.6673997331105896	601.0	601.0000334968438	88464.51588412249	88464.51624377567	null	(ts|s)
+default	[-syll,-nas][+cons]	8.862961108366994	1.0	1.0001772372447417	79708.99650219234	79708.99760109905	null	(y|w|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+default	[-syll][+wb]	18.931403502457197	0.0	3.731100562635549E-4	74869.48575974794	74869.48835133141	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-low][+wb]	17.51652504344473	0.0	3.50771640569537E-4	68649.17924119643	68649.18380995812	null	(y|w|i|e|o|u)(<#|#>)
+default	[+syll][+back]	3.6592525843307184	165.0	165.00007413081119	65287.630323453195	65287.63740759838	null	(i|e|a|o|u)(w|a|o|u)
+default	[+wb][+syll]	2.961429469578529	143.0	143.00006565317216	63979.89916277393	63979.90694406952	null	(<#|#>)(i|e|a|o|u)
+default	[+syll,-low][+syll,-back]	3.9292799394177167	15.0	15.00007002158969	63359.77033161922	63359.77814727131	null	(i|e|o|u)(i|e)
+default	[-syll,+sonorant][+cons,+sonorant]	5.304351372512755	5.0	5.000111817716782	62641.7262482216	62641.73432820552	null	(y|w|r|m|mh|n|nh|ny|N)(r|m|mh|n|nh|ny|N)
+default	[-syll][-voice]	14.637583016220523	0.0	2.920787812969906E-4	62135.95481612447	62135.96375822511	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|t|ts|s|ch|tsv|sh|sv|ty|k|h)
+default	[+cons,+sonorant,+dor][+sonorant]	3.2111555303363297	57.0	57.00006231519773	61488.652053389094	61488.661806317396	null	(N)(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N)
+default	[-nas][-delrel,+voice,-sg]	1.2398283475309624	554.0	554.0000173137336	61047.220717486576	61047.23080755426	null	(y|w|i|e|a|o|u|r|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(b|d|dy|g)
+default	[-wb][+delrel,+lab]	1.6712871219736005	87.0	87.0000321846088	60649.09291336219	60649.10317277526	null	(y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(pf|bv)
+default	[+wb][-syll,+sonorant]	1.1427514352892632	841.0	841.0000187642491	60283.585972038076	60283.596264735774	null	(<#|#>)(y|w|r|m|mh|n|nh|ny|N)
+default	[+cons,+lab][+low]	0.8753705790363058	899.0	899.0000104422496	59966.000475357665	59966.01089409997	null	(m|mh|p|pf|f|v|vh|b|bh|bv)(a)
+default	[+wb][+voice,-sg]	0.7279838056542381	1006.0	1006.0000136027054	59714.7798318714	59714.7903022675	null	(<#|#>)(v|b|bv|d|dz|dy|g)
+default	[+sonorant,-sg,+ant][+low]	1.4251904644568383	241.0	241.0000287344418	59532.608076523706	59532.618656879946	null	(n)(a)
+default	[+high][][-high,-low]	5.461853822658035	5.0	5.00010866357971	58913.26628465331	58913.27715203218	null	(y|w|i|u)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+default	[-high,-low][][+high]	1.8375814021640664	190.0	190.00003842000407	58532.14620374164	58532.15718130878	null	(e|o)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(y|w|i|u)
+default	[+low][][-high,-low]	4.217974198788604	7.0	7.0000947754970335	58220.88946297891	58220.90062997606	null	(a)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(e|o)
+default	[+wb][-nas,+dor][-back]	2.065960018529689	39.0	39.00004687443076	57947.56345172871	57947.57468944519	null	(<#|#>)(w|k|g)(y|i|e)
+default	[-cont,+cor][-nas,+dor]	2.2036241423634064	35.0	35.00005569037574	57745.63389262469	57745.64512040514	null	(n|nh|ny|t|d|dh|ts|dz|ch|j|tsv|dzv|dy|ty)(w|k|g)
+default	[-high,-back][][-high,-low,+back]	13.709365484894995	0.0	2.7684783639591286E-4	57538.62816134379	57538.64015195708	null	(e)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(o)
+default	[-syll][+delrel,-sg]	13.882287467475633	0.0	2.8019979057012994E-4	57348.840509744194	57348.8532800471	null	(y|w|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(bv|ts|dz)
+default	[-delrel,+cor][][+wb]	1.5660469896852982	261.0	261.00003746261126	57123.45241426849	57123.4662990093	null	(t|d|dh|dy|ty)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-ant][][+wb]	1.8024338357739524	217.0	217.00003350134494	56834.065439559185	56834.08004863282	null	(ny|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[-nas,+lab][][+wb]	1.7281973775630264	230.0	230.00003282351778	56478.650716536155	56478.66580998277	null	(w|p|pf|f|v|vh|b|bh|bv)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(<#|#>)
+default	[+delrel,+voice,+cor][][-sonorant]	1.4564498798346104	132.0	132.0000337279104	56270.3091979221	56270.3244146447	null	(dz|j|dzv)(<#|#>|y|w|i|e|a|o|u|r|m|mh|n|nh|ny|N|p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)(p|pf|f|v|vh|b|bh|bv|t|d|dh|ts|dz|s|z|ch|j|tsv|dzv|sh|zh|sv|zv|dy|ty|k|g|h)
+
+
+data plog after training = 56270.309197921546
+testing ...

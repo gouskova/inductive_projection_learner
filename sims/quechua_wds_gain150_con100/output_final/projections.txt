@@ -1,0 +1,2 @@
+default	any	all	3
+-sonorant-continuant	-sonorant,-continuant	wb,labial,RTR,syllabic,sg,cg,coronal,anterior,dorsal	2	3

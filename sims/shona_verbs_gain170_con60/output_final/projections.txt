@@ -1,0 +1,5 @@
+default	any	all	3
+-sonorant	-sonorant	wb,nas,cons,lab,voice,syll,delrel,cont,sg,cor,ant,secart,dor	2	3
+-high	-high	wb,back,nas,low,cons,sonorant,syll	2	3
+-high-low	-high,-low	wb,back,nas,cons,sonorant,syll	2	3
+-low	-low	wb,back,nas,cons,cor,cont,high,syll,sonorant,lab,dor	2	3

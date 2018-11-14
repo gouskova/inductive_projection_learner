@@ -1,0 +1,3 @@
+default	any	all	3
++syllabic-low	+syllabic,-low	wb,long,sonorant,mb,continuant,high,back	2	3
+-sonorant-continuant	-sonorant,-continuant	wb,plain,labial,mb,syllabic,dental,palatal,velar,uvular,cg,sg	2	3

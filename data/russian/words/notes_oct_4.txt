@@ -1,0 +1,11 @@
+Notes on Russian
+
+Baseline simulation, "phonemic" transcription of voicing and vowel quality (no vowel reduction, no voicing assimilation/devoicing)
+
+Most of the constraints have very low weights---both in the baseline tier and on the tiers derived from feature counting. There is only one constraint whose weight is in the normal "useful" range: the constraint against final palatalized dorsals. Those don't exist in the language and are the only consonants to be thus restricted. But the new learner makes it look like Russian has no phonotactic constraints at all, which is weird (there are definitely systematically unattested initial consonant clusters, for example)
+
+feature counting doesn't do any better than the baseline simulation, but because most of the weights are low, the useless constraints are considered useful by our current metrics.
+
+
+
+

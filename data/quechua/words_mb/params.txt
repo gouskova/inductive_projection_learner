@@ -1,0 +1,13 @@
+-test	test.txt
+-select
+-minGain	500
+-gamma	100
+-l2	0.00001
+-evaluator	gain
+-maxConSize	500
+-corpus	corpus.txt
+-projections	projections.txt
+-train
+-features	features.txt
+-maxWordLength	8	
+-minWordLength	3

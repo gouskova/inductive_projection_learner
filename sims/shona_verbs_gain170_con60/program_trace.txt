@@ -1,0 +1,26 @@
+Running the baseline simulation now.
+Done with baseline simulation.
+
+placeholder constraint found: [-high,-back][][-high,-low,+back]
+constructed a projection for the smallest natural class : 
+-high-low
+
+placeholder constraint found: [+low][][-high,-low]
+constructed a projection for the smallest natural class : 
+-high
+
+placeholder constraint found: [+delrel,+voice,+cor][][-sonorant]
+constructed a projection for the smallest natural class : 
+-sonorant
+
+placeholder constraint found: [+high][][-high,-low]
+constructed a projection for the smallest natural class : 
+-low
+
+placeholder constraint found: [-high,-low][][+high]
+constructed a projection for the smallest natural class : 
+-low
+
+done making a combo projection file from "-wb"-mentioning constraints
+Done with simulation.
+files have been moved to sims/2018-01-16_shona_verbs_wbsmall_vi_gain170_con60

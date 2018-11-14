@@ -1,0 +1,14 @@
+Running the baseline simulation now.
+Done with baseline simulation.
+
+placeholder constraint found: [-sonorant,-continuant][][+cg]
+constructed a projection for the smallest natural class : 
+-sonorant-continuant
+
+placeholder constraint found: [-sonorant,-continuant][][-continuant,+sg]
+constructed a projection for the smallest natural class : 
+-sonorant-continuant
+
+done making projections from "-wb"-mentioning constraints
+Done with simulation.
+files have been moved to sims/2017-12-17_quechua_wds_wbsmall_in_gain150_con100_1

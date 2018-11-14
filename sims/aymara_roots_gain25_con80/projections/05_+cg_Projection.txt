@@ -1,0 +1,2 @@
+default	any	all	3
++cg	+cg	wb,sonorant,syllabic,continuant,labial,dental,palatal,velar,uvular	2	3

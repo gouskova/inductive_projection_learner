@@ -1,0 +1,71 @@
+Running the baseline simulation now.
+Done with baseline simulation.
+
+placeholder constraint found: [+plain][][+cg]
+constructed a projection for the smallest natural class : 
+-sonorant-continuant
+
+placeholder constraint found: [+plain][][-continuant,+sg]
+constructed a projection for the smallest natural class : 
+-sonorant-continuant
+
+placeholder cosntraint found: [+sonorant,-continuant,+palatal][][-back]
+but, no superset classes exist that include both classes to either side of the placeholder
+
+placeholder constraint found: [+cg][][+cg]
+constructed a projection for the smallest natural class : 
++cg
+
+placeholder cosntraint found: [-low,-high][][+velar]
+but, no superset classes exist that include both classes to either side of the placeholder
+
+done making projections from "-wb"-mentioning constraints
+Multiple simulations will be run using the projections in /Users/oona/Desktop/phonotactics-master/projections
+Running the simulation 05_+cg_Projection.txt now.
+The output files from the 05_+cg_Projection.txt simulation have been copied to its own directory.
+Running the simulation 15_-sonorant-continuant_Projection.txt now.
+The output files from the 15_-sonorant-continuant_Projection.txt simulation have been copied to its own directory.
+Analyzing the output of the individual simulation
+
+analyzing grammar at /Users/oona/Desktop/phonotactics-master/output_05_+cg_Projection/grammar.txt
+the average weight in this grammar is 12.0088630137
+the weight must exceed the following threshold for the constraint to be kept: 12.446
+special projection constraint: [-wb][-wb],12.464
+
+this projection will be kept: output_05_+cg_Projection
+
+analyzing grammar at /Users/oona/Desktop/phonotactics-master/output_05_+cg_Projection/grammar.txt
+the average weight in this grammar is 12.0088630137
+the weight must exceed the following threshold for the constraint to be kept: 12.446
+special projection constraint: [-wb][-wb],12.464
+
+this projection will be kept: output_05_+cg_Projection
+
+analyzing grammar at /Users/oona/Desktop/phonotactics-master/output_15_-sonorant-continuant_Projection/grammar.txt
+the average weight in this grammar is 11.716575
+the weight must exceed the following threshold for the constraint to be kept: 12.44725
+special projection constraint: [+plain][+sg],12.878
+special projection constraint: [+velar][+uvular],10.643
+special projection constraint: [+plain][+cg],12.915
+special projection constraint: [+cg][+cg],12.514
+
+this projection will be kept: output_15_-sonorant-continuant_Projection
+
+analyzing grammar at /Users/oona/Desktop/phonotactics-master/output_15_-sonorant-continuant_Projection/grammar.txt
+the average weight in this grammar is 11.716575
+the weight must exceed the following threshold for the constraint to be kept: 12.44725
+special projection constraint: [+plain][+sg],12.878
+special projection constraint: [+velar][+uvular],10.643
+special projection constraint: [+plain][+cg],12.915
+special projection constraint: [+cg][+cg],12.514
+
+this projection will be kept: output_15_-sonorant-continuant_Projection
+
+Projections that turned up useful constraints:
+-sonorant-continuant
+
+Projections that turned up useful constraints:
++cg
+Collected all the useful tiers and running the mega simulation now.
+The output files from the combined simulation have been copied to a directory.
+files have been moved to sims/2017-12-18_aymara_wbsmall_in_gain25_con80

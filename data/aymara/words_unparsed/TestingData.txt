@@ -1,0 +1,125 @@
+g a b u	cooccurrence
+g i b a	cooccurrence
+g i b i	cooccurrence
+g i d a	cooccurrence
+g u b i	cooccurrence
+g u d a	cooccurrence
+k a b a	ordering
+k a b i	ordering
+k i b a	ordering
+k i b u	ordering
+k u b a	ordering
+k u d a	ordering
+l a b a	control
+l i g a	control
+l i b u	control
+l u g a	control
+m a G o	control
+m o G o	control
+n a b u	control
+n a d u	control
+n u d a	control
+b i g a	cooccurrence
+b i d a	cooccurrence
+b u g a	cooccurrence
+p i d a	ordering
+p u g i	ordering
+G a b i	cooccurrence
+G a d a	cooccurrence
+G o b i	cooccurrence
+q a d i	ordering
+s a G o	control
+s e G a	control
+d a b u	cooccurrence
+d a G o	cooccurrence
+d o G e	cooccurrence
+t a G e	ordering
+t i b a	ordering
+t i b i	ordering
+t i b u	ordering
+t o G e	ordering
+t u g i	ordering
+j a b i	control
+j u g a	control
+j u g u	control
+j u b a	control
+z a m b a N a	cooc-lab
+z a n d a N a	cooc-dent
+z i Y b a N a	cooc-lab
+z i Y d a N a	cooc-dent
+z i m b a N a	cooc-lab
+z i n d a N a	cooc-dent
+z u Y b a N a	cooc-lab
+z u Y d a N a	cooc-dent
+c a Y p a N a	control
+c a Y t a N a	control
+c a m b a N a	order-lab
+c a m p a N a	control
+c a n d a N a	order-dent
+c i Y b a N a	order-lab
+c i Y d a N a	order-dent
+c i Y t a N a	control
+c i m b a N a	order-lab
+c i m p a N a	control
+c i n d a N a	order-dent
+c i s p a N a	control
+c u Y b a N a	order-lab
+c u Y d a N a	order-dent
+c u Y t a N a	control
+c u n t a N a	control
+g a Y b a N a	cooc-lab
+g a Y d a N a	cooc-dent
+g a s b a N a	cooc-lab
+g a s d a N a	cooc-dent
+g i s b a N a	cooc-lab
+g i s d a N a	cooc-dent
+g u Y b a N a	cooc-lab
+g u Y d a N a	cooc-dent
+k a Y b a N a	order-lab
+k a Y p a N a	control
+k a Y d a N a	order-dent
+k a Y t a N a	control
+k a s b a N a	order-lab
+k a s p a N a	control
+k a s d a N a	order-dent
+k i s b a N a	order-lab
+k i s p a N a	control
+k i s d a N a	order-dent
+k i s t a N a	control
+k u Y b a N a	order-lab
+k u Y p a N a	control
+k u Y d a N a	order-dent
+k u Y t a N a	control
+k u s t a N a	control
+Y i m p a N a	control
+Y i n t a N a	control
+Y i s p a N a	control
+Y i s t a N a	control
+Y u Y p a N a	control
+Y u Y t a N a	control
+m a Y p a N a	control
+m a Y t a N a	control
+m a s p a N a	control
+m a s t a N a	control
+m i s p a N a	control
+m i s t a N a	control
+m u Y p a N a	control
+m u Y t a N a	control
+G a s b a N a	cooc-lab
+G a s d a N a	cooc-dent
+G o Y b a N a	cooc-lab
+G o Y d a N a	cooc-dent
+q a s b a N a	order-lab
+q a s p a N a	control
+q a s d a N a	order-dent
+q a s t a N a	control
+q e Y p a N a	control
+q o Y b a N a	order-lab
+q o Y d a N a	order-dent
+q o Y t a N a	control
+s a m p a N a	control
+s a n t a N a	control
+s i Y p a N a	control
+s i Y t a N a	control
+s u Y p a N a	control
+s u Y t a N a	control
