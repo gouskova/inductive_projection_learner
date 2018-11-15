@@ -1,0 +1,1985 @@
+word	local_natclass_trigrams	nonlocal_natclass_trigrams	length
+z a X a	759	2607	4
+z a k a	2277	4917	4
+z a k a	2277	4917	4
+z a K a	2530	5302	4
+z a K a	2530	5302	4
+z a K u r u	7564	38672	6
+z a k u	2574	5934	4
+z a l i	4620	9612	4
+z a L a	3542	6842	4
+z a L p a	4928	15452	5
+z a L P a	5236	16313	5
+z a m a	2530	5302	4
+z a m h a	3300	11827	5
+z a m P a	3740	13277	5
+z a m u	2860	6388	4
+z a n k a	4290	13900	5
+z a n K a	4576	14727	5
+z a n k u	4641	16165	5
+z a n q a	4576	14727	5
+z a n Q a	4862	15554	5
+z a N a	3036	6072	4
+z a N u	3432	7296	4
+z a p a q a	4840	25367	6
+z a P a q a	5203	26576	6
+z a P i	3388	7612	4
+z a P u	3146	6842	4
+z a p u	2860	6388	4
+z a q a	2530	5302	4
+z a q o	2750	6026	4
+z a r a n a	7117	34370	6
+z a r K i	5628	19572	5
+z a r k i	5250	18526	5
+z a s k a	3630	12518	5
+z a t a	3036	6072	4
+z a t i	3696	8112	4
+z a w a	2277	4917	4
+z a w i	2772	6612	4
+z a w s t a t a	7953	76874	8
+z a x X u	1863	8295	5
+z a x c i	4104	16824	5
+z a x e	2772	6612	4
+z a x L u n a	8888	59876	7
+z a x m i	3618	15122	5
+z a x t a	3564	13209	5
+z a x w a	2970	11136	5
+z a x w i	3375	14271	5
+z a y k a	3300	11827	5
+z a y K a	3520	12552	5
+z a y N a	3960	14002	5
+z e n q a	6006	18682	5
+z e q a	3680	7112	4
+z e x c i	5184	21264	5
+z e x e	4032	8832	4
+z e x o L a	7240	38325	6
+z e x t a	4644	16824	5
+z i X i	1344	4992	4
+z i h i	4032	8832	4
+z i h m a	4158	15122	5
+z i h u	3744	7944	4
+z i K i	4480	9472	4
+z i K u	4160	8528	4
+z i k i	4032	8832	4
+z i k u	3744	7944	4
+z i l a	5520	9612	4
+z i l X i	4320	16572	5
+z i L a	5152	9112	4
+z i L i w a	9872	42894	6
+z i m a k a	5759	29763	6
+z i m i	4480	9472	4
+z i n a	4784	8612	4
+z i n k a t a	8295	59652	7
+z i N i	5376	10752	4
+z i P a	4048	7612	4
+z i p i	4480	9472	4
+z i p o q o	6990	36904	6
+z i r i	6272	12032	4
+z i r m i	7168	24592	5
+z i r u	5824	10864	4
+z i r w a	6090	18526	5
+z i s i	4928	10112	4
+z i s L i	7040	25848	5
+z i t i	5376	10752	4
+z i w a	3312	6612	4
+z i w i	4032	8832	4
+z i w	1728	1728	3
+z i y a	3680	7112	4
+z o L Q e	6650	22710	5
+z o q a	2990	6026	4
+z o q e	3640	8056	4
+z o x N a	3996	14655	5
+z o x o	2925	6357	4
+z u X u	1092	3948	4
+z u h t a	4212	15378	5
+z u h u	3276	7140	4
+z u k u	3276	7140	4
+z u l a p a	7690	35567	6
+z u L a	4508	8204	4
+z u l u	5460	10332	4
+z u m a	3220	6388	4
+z u m i	3920	8528	4
+z u m P i	4980	19572	5
+z u n X u	3276	12424	5
+z u N u	4368	8736	4
+z u p u	3640	7672	4
+z u r a w i	7478	39848	6
+z u r i	5488	10864	4
+z u r u	5096	9800	4
+z u s a	3542	6842	4
+z u s i	4312	9112	4
+z u s p a	4598	15452	5
+z u s p i	5148	19572	5
+z u t a	3864	7296	4
+z u T a	4186	7750	4
+z u t i	4704	9696	4
+z u t u	4368	8736	4
+z u w a	2898	5934	4
+z u w i	3528	7944	4
+c a X a	759	2607	4
+c a k a	2277	4917	4
+c a k u	2574	5934	4
+c a l a	3795	7227	4
+c a l i	4620	9612	4
+c a L k a	4620	14591	5
+c a L m u	5348	17924	5
+c a L w a	4620	14591	5
+c a m X u	2070	8860	5
+c a m q a	3520	12552	5
+c a m u	2860	6388	4
+c a n a	3289	6457	4
+c a n i	4004	8612	4
+c a p a	2530	5302	4
+c a p u	2860	6388	4
+c a	0	0	2
+c a r i	4312	9112	4
+c a r k a	4620	14591	5
+c a r u	4004	8204	4
+c a t u	3432	7296	4
+c a w a	2277	4917	4
+c a y X a	1980	7477	5
+c a y i	3080	7112	4
+c e L q e	7168	24592	5
+c e n q e	6656	23512	5
+c e q a	3680	7112	4
+C a h a	2376	5236	4
+C a k u	2673	6313	4
+C a l a	3960	7678	4
+C a L a	3696	7271	4
+C a L m a	5082	16241	5
+C a L u	4158	8708	4
+C a m a	2640	5643	4
+C a n k a	4433	14622	5
+C a n K a	4719	15484	5
+C a N a q e	6248	35479	6
+C a p a q a	4950	26490	6
+C a p X a	2090	7914	5
+C a P a	2904	6050	4
+C a p u	2970	6792	4
+C a q a	2640	5643	4
+C a Q a	2904	6050	4
+C a r i	4466	9666	4
+C a r P u	5852	19829	5
+C a r q o	5362	17959	5
+C a x X a	1881	7402	5
+C a x e	2871	7031	4
+C a x r u	4437	17807	5
+C a x w a	3069	11734	5
+C e Q a	4224	8085	4
+C e r Q e	7840	27058	5
+C e x c i	5328	22300	5
+C e x i	4176	9376	4
+C e x o L a	7384	39898	6
+C e x w a	4059	15014	5
+C i X i	1392	5344	4
+C i h X i	2736	12607	5
+C i h i y a	7376	37933	6
+C i h L a t a	8574	63944	7
+C i h u	3888	8438	4
+C i L X i	4256	16642	5
+C i p i	4640	10048	4
+C i r i	6496	12736	4
+C i t a	4608	8612	4
+C i T a	4992	9139	4
+C i w X i	2736	12607	5
+C i w c i	5328	22300	5
+C i w i	4176	9376	4
+C i y a	3840	7558	4
+C o Q a	3432	6864	4
+C o Q o	3718	7774	4
+C o r o	4732	9295	4
+C o x L a	4545	16986	5
+C o x L u	4923	19665	5
+C o x o	3042	6760	4
+C o x r i	5175	21451	5
+C u X u	1134	4228	4
+C u h X u	2394	10375	5
+C u h L a	4788	17807	5
+C u h t a	4338	16165	5
+C u h u	3402	7588	4
+C u K u	3780	8148	4
+C u k u	3402	7588	4
+C u L u	5292	10388	4
+C u r k u	6076	20594	5
+C u r s u	6860	22862	5
+C u r u	5292	10388	4
+C u s u	4158	8708	4
+C u y u	3780	8148	4
+c i X i	1344	4992	4
+c i h i	4032	8832	4
+c i k a	3312	6612	4
+c i L a	5152	9112	4
+c i L k a	6090	18526	5
+c i L k i	6720	23336	5
+c i L p a	6468	19572	5
+c i L t a	7224	21664	5
+c i L u	5824	10864	4
+c i l w i	7200	24372	5
+c i m p u	4920	18568	5
+c i n t a	6708	20696	5
+c i n u	5408	10280	4
+c i N i	5376	10752	4
+c i	0	0	2
+c i t a	4416	8112	4
+c i w X i	2592	11940	5
+c o q a	2990	6026	4
+c u X a	966	3210	4
+c u X i	1176	4440	4
+c u X u	1092	3948	4
+c u h X u	2268	9816	5
+c u k a	2898	5934	4
+c u k i	3528	7944	4
+c u k u	3276	7140	4
+c u L a	4508	8204	4
+c u L X u	3528	13076	5
+c u L p a	5852	17924	5
+c u L u	5096	9800	4
+c u l u	5460	10332	4
+c u n k i L a	10174	70931	7
+c u n u	4732	9268	4
+c u N i	4704	9696	4
+c u p a	3220	6388	4
+c u p i k a	6944	33756	6
+c u	0	0	2
+c u r i	5488	10864	4
+c u r k u	5880	19628	5
+c u r u	5096	9800	4
+c u s i	4312	9112	4
+c u t a	3864	7296	4
+c u w a	2898	5934	4
+c u w i	3528	7944	4
+c u y k u	4200	16060	5
+c u y m a	4180	14628	5
+h a z a	2640	4917	4
+h a z i	3300	6612	4
+h a z u	3036	5934	4
+h a c a	2640	4917	4
+h a C i w a	7031	29622	6
+h a c u	3036	5934	4
+h a X a P u	2717	17582	6
+h a X a p u	2530	16694	6
+h a g a	1980	3960	4
+h a g u	2277	4797	4
+h a k a	1980	3960	4
+h a K u	2530	5176	4
+h a k i	2475	5355	4
+h a l i	4125	7869	4
+h a l X a	2475	8226	5
+h a l X i	2700	10746	5
+h a L i	3850	7450	4
+h a L m u	4886	15242	5
+h a L p a	4466	13085	5
+h a L G a	4466	13085	5
+h a L G e	5166	16680	5
+h a L q a	4466	13085	5
+h a L u	3542	6692	4
+h a l s u	5610	16850	5
+h a l t a	5445	15282	5
+h a l u	3795	7071	4
+h a m a	2200	4279	4
+h a m z a	3630	11827	5
+h a m z i	4230	15122	5
+h a m b a	3190	10569	5
+h a m b i	3690	13564	5
+h a m u	2530	5176	4
+h a n a	2860	5236	4
+h a n z a	4719	13900	5
+h a n z i	5499	17675	5
+h a n z u	5187	16165	5
+h a n c i	5499	17675	5
+h a n i	3575	7031	4
+h a n g a	3861	11734	5
+h a n G o	4407	13834	5
+h a n d a k u	7293	49706	7
+h a n t a	4719	13900	5
+h a b a	2200	4279	4
+h a p i	2750	5774	4
+h a p u	2530	5176	4
+h a q e	2750	5774	4
+h a Q e	3025	6193	4
+h a q o	2420	4877	4
+h a	0	0	2
+h a r i	3850	7450	4
+h a r g a	4158	12332	5
+h a r g i	4788	15757	5
+h a r P i	5544	17603	5
+h a r Q a	4774	13838	5
+h a r u	3542	6692	4
+h a r w i	4788	15757	5
+h a s a	2420	4598	4
+h a s i	3025	6193	4
+h a s k a	3267	10538	5
+h a s t a	3993	12518	5
+h a s T a	4235	13178	5
+h a d i	3300	6612	4
+h a T a	2860	5236	4
+h a T i	3575	7031	4
+h a t u	3036	5934	4
+h a w a	1980	3960	4
+h a w z a	3267	11136	5
+h a w i	2475	5355	4
+h a w G a	2871	9940	5
+h a w	891	891	3
+h a w r i	4293	15757	5
+h a w s a	3069	10538	5
+h a y a	2200	4279	4
+h a y c a	3630	11827	5
+h a y i	2750	5774	4
+h a y b u	3490	12366	5
+h a y P u	3740	13085	5
+h a y	990	990	3
+h a y r i	4770	16680	5
+h a y u	2530	5176	4
+h e m G e	4640	17284	5
+h e G e	4000	7744	4
+h e w G e	4176	16330	5
+h i z i	4800	8832	4
+h i c a	3840	6612	4
+h i C a	4160	7031	4
+h i C u	4784	8438	4
+h i g i	3600	7200	4
+h i g u	3312	6462	4
+h i K a	3200	5774	4
+h i k i	3600	7200	4
+h i l a	4800	7869	4
+h i l i	6000	10464	4
+h i L G e	6496	21100	5
+h i L u	5152	8932	4
+h i l G e	6960	22054	5
+h i l d a	7020	19377	5
+h i n c u	6552	20450	5
+h i n G e	6032	20146	5
+h i n t a	6084	17675	5
+h i n t i l i	13584	91615	7
+h i P i	4400	8288	4
+h i p i	4000	7744	4
+h i r i	5600	9920	4
+h i r u	5152	8932	4
+h i s i	4400	8288	4
+h i s g a	4257	13528	5
+h i s K a	4554	14343	5
+h i s K i	5104	18238	5
+h i s K u	4884	16680	5
+h i s p i	5104	18238	5
+h i s G e	5104	18238	5
+h i s t a	5148	15973	5
+h i T i	5200	9376	4
+h i t u	4416	7944	4
+h i w a	2880	5355	4
+h i w g i	3888	15417	5
+h i w k a y a	5683	42090	7
+h i w G e	4176	16330	5
+h i w t a	4212	14271	5
+h i y a	3200	5774	4
+h i y i	4000	7744	4
+h o G o	2860	5551	4
+h o Q o	3146	5954	4
+h o r Q e	6104	19449	5
+h o s G o	4147	13834	5
+h u z u s a	7406	32693	6
+h u c a	3360	5934	4
+h u C a	3640	6313	4
+h u C i	4550	8438	4
+h u c i	4200	7944	4
+h u g a	2520	4797	4
+h u k u	2898	5796	4
+h u L u	4508	8036	4
+h u m a	2800	5176	4
+h u m i n d a	9792	61615	7
+h u m b i	4260	15796	5
+h u m b u	4060	14424	5
+h u n z u	6006	18736	5
+h u n i	4550	8438	4
+h u n X a	2613	8776	5
+h u n d a	5538	16165	5
+h u n d u	6006	18736	5
+h u n u	4186	7588	4
+h u N i	4200	7944	4
+h u p a	2800	5176	4
+h u P a	3080	5555	4
+h u p i	3500	6956	4
+h u	0	0	2
+h u r i	4900	8932	4
+h u r g u	5292	16730	5
+h u r m a	5264	15242	5
+h u r n u	6860	20594	5
+h u r p a	5264	15242	5
+h u r p i	5964	19332	5
+h u r q e	5964	19332	5
+h u r u	4508	8036	4
+h u s i	3850	7450	4
+h u s k u s i	8008	59168	7
+h u s P a	4411	13838	5
+h u d i	4200	7944	4
+h u d u	3864	7140	4
+h u t a	3360	5934	4
+h u T a	3640	6313	4
+h u T a w i	6511	33606	6
+h u t i	4200	7944	4
+h u w m i	3834	14912	5
+h u y a	2800	5176	4
+h u y K u	4060	14424	5
+h u y P i	4560	16680	5
+h u y	1260	1260	3
+g a c a	2640	4917	4
+g a c i	3300	6612	4
+g a h a	1980	3960	4
+g a h i	2475	5355	4
+g a h k i	3078	12042	5
+g a h L i	4293	15757	5
+g a h L u	4041	14387	5
+g a X a	660	2046	4
+g a X i	825	2841	4
+g a k a L i	5830	30860	6
+g a k i	2475	5355	4
+g a k u n a	5917	27386	6
+g a l a	3300	5874	4
+g a L a	3080	5555	4
+g a L i	3850	7450	4
+g a L X a	2310	7814	5
+g a L X u	2436	9257	5
+g a m a	2200	4279	4
+g a m P i	3960	14343	5
+g a n a	2860	5236	4
+g a n X a	2145	7402	5
+g a n t a	4719	13900	5
+g a n u	3289	6313	4
+g a p a	2200	4279	4
+g a P a	2420	4598	4
+g a P u	2783	5555	4
+g a p u	2530	5176	4
+g a	0	0	2
+g a r i	3850	7450	4
+g a r X a	2310	7814	5
+g a r X u	2436	9257	5
+g a s a	2420	4598	4
+g a s X a	1815	6578	5
+g a s X i	1980	8638	5
+g a s k i	3762	13528	5
+g a s t u	4389	14591	5
+g a t a	2640	4917	4
+g a w c i	3807	14271	5
+g a w n a	3465	11734	5
+g a w s u	3366	12332	5
+g a w u	2277	4797	4
+g a y	990	990	3
+g a y w a	2970	9940	5
+g i c i	4800	8832	4
+g i l a	4800	7869	4
+g i l i	6000	10464	4
+g i L i m a	9600	39448	6
+g i L p a	5796	16680	5
+g i L P a	6174	17603	5
+g i l u	5520	9426	4
+g i n c u	6552	20450	5
+g i n X u	3042	11441	5
+g i N a	3840	6612	4
+g i P a	3520	6193	4
+g i r i	5600	9920	4
+g i r p a	5796	16680	5
+g i r u	5152	8932	4
+g i s a	3520	6193	4
+g i s X i	2640	11273	5
+g i s N i	5808	20228	5
+g i s p i	5104	18238	5
+g i s t u	5544	18526	5
+g i s u	4048	7450	4
+g i T a	4160	7031	4
+g i w c a	4212	14271	5
+g i y a	3200	5774	4
+g u c i	4200	7944	4
+g u c u	3864	7140	4
+g u X u	966	3108	4
+g u k a	2520	4797	4
+g u l i	5250	9426	4
+g u L X u	2940	10934	5
+g u L u	4508	8036	4
+g u l u	4830	8484	4
+g u m a	2800	5176	4
+g u m i	3500	6956	4
+g u m P i	4560	16680	5
+g u m u	3220	6244	4
+g u n u	4186	7588	4
+g u N u	3864	7140	4
+g u P a	3080	5555	4
+g u r k i	5544	18292	5
+g u s a	3080	5555	4
+g u s i L a	8778	38225	6
+g u s X i	2376	10219	5
+g u s k i	4356	15757	5
+g u s u	3542	6692	4
+g u t a	3360	5934	4
+g u T i	4550	8438	4
+g u t i	4200	7944	4
+g u t u	3864	7140	4
+g u y X u	2100	8698	5
+g u y k a	3510	11647	5
+g u y m a	3760	12366	5
+k a c a	2640	4917	4
+k a c i	3300	6612	4
+k a c u	3036	5934	4
+k a l a n X a	6303	37361	7
+k a l c a	5445	15282	5
+k a l i	4125	7869	4
+k a L a c i	7040	35279	6
+k a L c a	5082	14591	5
+k a m a	2200	4279	4
+k a m i l u	8510	38025	6
+k a m s a	3410	11198	5
+k a n i	3575	7031	4
+k a n X a	2145	7402	5
+k a p a	2200	4279	4
+k a p i	2750	5774	4
+k a p u n a	6352	28724	6
+k a r a h u	5852	28544	6
+k a r u m a	7042	29927	6
+k a s a	2420	4598	4
+k a s t a	3993	12518	5
+k a s t i	4653	15973	5
+k a s u	2783	5555	4
+k a t a	2640	4917	4
+k a t u	3036	5934	4
+k a w X i	1620	7584	5
+k a y a	2200	4279	4
+k a y X u	1740	7333	5
+k a y u	2530	5176	4
+K a c a	2772	5302	4
+K a c i	3432	7112	4
+K a h L a	3762	13085	5
+K a k a	2079	4279	4
+K a X a	693	2233	4
+K a L u	3696	7196	4
+K a m u	2640	5580	4
+K a n k a L i	7854	59412	7
+K a n X a	2288	7914	5
+K a n u	3432	6792	4
+K a p a	2310	4620	4
+K a r i	4004	8004	4
+K a r k a	4312	13085	5
+K a r X a	2464	8351	5
+K a r s u	5390	17030	5
+K a r u	3696	7196	4
+K a s a	2541	4961	4
+K a T a	3003	5643	4
+K a y a	2310	4620	4
+K i c u	4608	8528	4
+K i	0	0	2
+K i r X i	3584	14116	5
+K i r u	5376	9576	4
+K i s t u	5720	19572	5
+K i t a	4032	7112	4
+K i T a	4368	7558	4
+K i t i	4992	9472	4
+K i t u	4608	8528	4
+K i w i	3744	7744	4
+K u c i	4368	8528	4
+K u k a t a	5286	27521	6
+K u l a	4410	7600	4
+K u L u	4704	8624	4
+K u m a	2940	5580	4
+K u m u	3360	6720	4
+K u n u	4368	8148	4
+K u r i	5096	9576	4
+K u r X u	3136	11648	5
+K u r k u	5488	17696	5
+K u s a	3234	5984	4
+K u s X a	2365	8351	5
+K u s X u	2464	9878	5
+K u s u	3696	7196	4
+K u y a	2940	5580	4
+K u y z u k i	8288	61432	7
+K u y k a	3650	12366	5
+K u y u	3360	6720	4
+k i c u	4416	7944	4
+k i h a	2880	5355	4
+k i X i	1200	3936	4
+k i X p a	1242	8111	5
+k i L i	5600	9920	4
+k i m s a	4410	14343	5
+k i N a	3840	6612	4
+k i p a	3200	5774	4
+k i p X a	2250	8111	5
+k i w u	3312	6462	4
+k u c u	3864	7140	4
+k u l i	5250	9426	4
+k u L a X a	4745	20246	6
+k u L i	4900	8932	4
+k u L t a	5964	16952	5
+k u m p a	3760	12366	5
+k u m p u	4060	14424	5
+k u n a	3640	6313	4
+k u n i	4550	8438	4
+k u n X a	2613	8776	5
+k u p i	3500	6956	4
+k u	0	0	2
+k u r h i	5544	18292	5
+k u r m i	5964	19332	5
+k u r s i y a	9904	61495	7
+k u r u m i	8708	41312	6
+k u s a	3080	5555	4
+k u s i	3850	7450	4
+k u s u p i	7322	36602	6
+k u t i	4200	7944	4
+k u t u	3864	7140	4
+k u y X u	2100	8698	5
+k u y p a	3760	12366	5
+l a h u	2871	7071	4
+l a g u	2871	7071	4
+l a k a	2574	5874	4
+l a k i	3069	7869	4
+l a X a	858	3168	4
+l a m a	2860	6325	4
+l a m p a	3850	14535	5
+l a n k a	4719	16066	5
+l a n K u	5395	19677	5
+l a n t i	6357	23717	5
+l a b a c a	5632	31412	6
+l a p a k a	4939	27398	6
+l a P a	3146	6776	4
+l a P i	3751	9031	4
+l a G a	2860	6325	4
+l a G o	3080	7175	4
+l a q a	2860	6325	4
+l a Q a	3146	6776	4
+l a Q o	3388	7678	4
+l a r z u	6510	22784	5
+l a r k a	5082	16850	5
+l a r P a	5698	18788	5
+l a r q a	5390	17819	5
+l a r u	4466	9716	4
+l a s d a	4719	17072	5
+l a s u	3509	8129	4
+l a d u	3828	8658	4
+l a w a	2574	5874	4
+l a x a	2574	5874	4
+l a x	1485	1485	3
+l a x w i	3672	16500	5
+l a y a	2860	6325	4
+l a y i	3410	8450	4
+l a y k u	3900	15961	5
+l a y m i	4350	18460	5
+l a y q a	3850	14535	5
+l e G e	4960	11200	4
+l e r G o	7420	24712	5
+l i c i	5952	12672	4
+l i h u	4176	9426	4
+l i g i	4464	10464	4
+l i m i	4960	11200	4
+l i m d a	5640	20462	5
+l i n g u	6630	23453	5
+l i n r i	8944	32266	5
+l i b a	4160	8450	4
+l i b i c i	9952	55912	6
+l i b o	4480	9550	4
+l i s u	5104	10774	4
+l i w a	3744	7869	4
+l i w i	4464	10464	4
+l i w h a	4347	16500	5
+l i w K a n a	7593	61438	7
+l i y i	4960	11200	4
+L a c u	3696	8204	4
+L a h a	2475	5555	4
+L a h X a	1980	7814	5
+L a k i	2970	7450	4
+L a L a	3850	7700	4
+L a m i	3300	8004	4
+L a m K a	3740	13874	5
+L a m b u	4040	16136	5
+L a p a	2750	5984	4
+L a P i	3630	8558	4
+L a q a	2750	5984	4
+L a t a	3300	6842	4
+L a w z a	3762	14591	5
+L a w z i	4302	18526	5
+L a w i	2970	7450	4
+L a w X i	2115	10219	5
+L a w s a	3564	13838	5
+L a w u	2772	6692	4
+L a y T a	4400	16241	5
+L e n G e	7072	25756	5
+L e Q a	4400	8558	4
+L e s G e	5984	23428	5
+L e x e	4320	9920	4
+L e x t i	5472	23336	5
+L i h i	4320	9920	4
+L i h u	4032	8932	4
+L i k a	3600	7450	4
+L i X i	1440	5696	4
+L i m P i	5760	23428	5
+L i n g i	6656	24454	5
+L i P u	4928	10220	4
+L o q o	3510	7696	4
+L o s G o	4862	17959	5
+L o x e	3510	8438	4
+L o x X a	2286	8776	5
+L o x m a	3798	14523	5
+L u z i	5040	10864	4
+L u z u	4704	9800	4
+L u h d a	4464	16952	5
+L u k u	3528	8036	4
+L u L u	5488	10976	4
+L u m i	4200	9576	4
+L u m b i	4960	20416	5
+L u n g u	5824	20594	5
+L u p a	3500	7196	4
+L u P a	3850	7700	4
+L u s g a	4631	16097	5
+L u s k u	4928	18662	5
+L u s d a	5456	18896	5
+L u d a p u	7060	38672	6
+L u T u	5096	10388	4
+L u t u	4704	9800	4
+l o n Q o	6253	21814	5
+l o G o	3640	8125	4
+l o Q e	4433	10193	4
+l o q o	3640	8125	4
+l o x o	3276	7566	4
+l o x r u	5157	21523	5
+l o x d u	4671	19593	5
+l u g a n a	6136	35414	6
+l u k u	3654	8484	4
+l u X i	1302	5382	4
+l u X u	1218	4788	4
+l u n T a t a	10123	71510	7
+l u b i	4340	10100	4
+l u p i	4340	10100	4
+l u	0	0	2
+l u r z u	7644	26180	5
+l u r i	6076	12796	4
+l u r h a	6090	19517	5
+l u r u h a	8834	41567	6
+l u t i	5208	11448	4
+l u w a	3276	7071	4
+m a z a	2772	5302	4
+m a c a	2772	5302	4
+m a h a	2079	4279	4
+m a g a	2079	4279	4
+m a g i c a	6414	29763	6
+m a g u n X u	5106	38864	7
+m a K a	2310	4620	4
+m a K i	2860	6220	4
+m a K u r X a	5650	37459	7
+m a l a	3465	6325	4
+m a L a	3234	5984	4
+m a L k i	4942	16680	5
+m a L k u	4690	15242	5
+m a L G a	4620	13874	5
+m a l t a	5610	16177	5
+m a X a	693	2233	4
+m a X i	858	3098	4
+m a n G a	4290	13213	5
+m a n Q a	4576	13970	5
+m a n u	3432	6792	4
+m a N a s u	5918	30203	6
+m a b a	2310	4620	4
+m a q a	2310	4620	4
+m a Q a n a	5687	27742	6
+m a q o	2530	5260	4
+m a	0	0	2
+m a r k a	4312	13085	5
+m a r K a	4620	13874	5
+m a r X i	2674	10896	5
+m a r p a c a	7392	49993	7
+m a r q a	4620	13874	5
+m a s a	2541	4961	4
+m a s i	3146	6666	4
+m a s k i	3883	14343	5
+m a d a q e	5852	31192	6
+m a d i	3432	7112	4
+m a t a	2772	5302	4
+m a T a p i	6193	32525	6
+m a w r i	4392	16680	5
+m a x a	2079	4279	4
+m a x L a	3762	13085	5
+m a x n u	3915	14523	5
+m a x d a	3366	11827	5
+m a y a	2310	4620	4
+m a y h a	3080	10569	5
+m a y k a t a	5720	41198	7
+m a y X a	1760	6603	5
+m a y X u r u	5182	42142	7
+m a y n e x t a	9398	84020	8
+m a y n i	4610	16828	5
+m a y q a	3300	11230	5
+m a y s a n a	6666	46422	7
+m a y d u	4100	14628	5
+m e q e	4160	8320	4
+m e r G e	6720	22264	5
+m e x a	3024	5774	4
+m i z a	4032	7112	4
+m i z i	4992	9472	4
+m i g a y a	5224	27193	6
+m i g i	3744	7744	4
+m i K i	4160	8320	4
+m i L i	5824	10624	4
+m i L g u	6020	19332	5
+m i n g a	5239	15901	5
+m i n u	4992	9052	4
+m i r k a	5642	16680	5
+m i r K a	6020	17644	5
+m i s g i	4928	18238	5
+m i s X i	2816	12010	5
+m i s t u	5720	19572	5
+m i d a	4032	7112	4
+m i t a	4032	7112	4
+m i T a	4368	7558	4
+m o L o G o	7696	35655	6
+m o G e	3380	7060	4
+m o q e	3380	7060	4
+m o q o	2990	5980	4
+m o r q o	5460	17026	5
+m o s G a	4070	13213	5
+m o s G o	4290	14659	5
+m o x z i	4302	16750	5
+m o x s a	3546	12456	5
+m u z a	3528	6388	4
+m u c a	3528	6388	4
+m u C a	3822	6792	4
+m u c i	4368	8528	4
+m u h i	3276	6956	4
+m u h L i	5040	19332	5
+m u h u	3024	6244	4
+m u g i	3276	6956	4
+m u g u	3024	6244	4
+m u K i	3640	7480	4
+m u L a	4116	7196	4
+m u L u	4704	8624	4
+m u l d i	7500	23588	5
+m u n a	3822	6792	4
+m u r i	5096	9576	4
+m u r g a	5110	15242	5
+m u r X u	3136	11648	5
+m u r u	4704	8624	4
+m u s i	4004	8004	4
+m u s K i	4840	17644	5
+m u s P a	4565	14663	5
+m u d i	4368	8528	4
+m u t a	3528	6388	4
+m u T u	4368	8148	4
+m u t u	4032	7672	4
+m u y d a	4400	14628	5
+m u y t a	4400	14628	5
+m u y u	3360	6720	4
+m u T a p i	7012	36806	6
+n a K a	2640	5643	4
+n a s a	2904	6050	4
+n a y	1430	1430	3
+n i X a	1152	3869	4
+n i y a	3840	7558	4
+n u K u	3780	8148	4
+n u w a	3024	6313	4
+n u w h a	3663	13702	5
+N a z a	3036	6072	4
+N a g a y a	4477	24158	6
+N a k a	2277	4917	4
+N a n Q a	4862	15554	5
+N a X a	759	2607	4
+N a p i n i	8488	43114	6
+N a x o	2475	5595	4
+N e G e	4480	9472	4
+N e q e	4480	9472	4
+N i g u t a	7104	36802	6
+N i d i	5376	10752	4
+N o q e	3640	8056	4
+N o x o	2925	6357	4
+N u k u	3276	7140	4
+N u X u	1092	3948	4
+N u b i	3920	8528	4
+N u s a	3542	6842	4
+N u s g u	4620	16952	5
+N u d u	4368	8736	4
+b a k i	2574	5774	4
+b a L q a	4620	13874	5
+b a m X a	1760	6603	5
+b a X i	858	3098	4
+b a q o	2530	5260	4
+b a r i	4004	8004	4
+b a r X a	2464	8351	5
+b a s X a	1936	7040	5
+b a t a	2772	5302	4
+b a t i	3432	7112	4
+b a t s u	4620	15452	5
+b a x a L i	5929	32333	6
+b a x N u	3690	13804	5
+b a x	990	990	3
+b e n q a	5590	16828	5
+b e q e	4160	8320	4
+b e s q e	5280	19276	5
+b i n k i	5824	20146	5
+b i s a	3696	6666	4
+b i t a	4032	7112	4
+b i t u	4608	8528	4
+b i y a	3360	6220	4
+b o s q o	4290	14659	5
+b u h a	2646	5176	4
+b u h r u	4788	17696	5
+b u h s a	3735	13085	5
+b u l t i	7500	23588	5
+b u N u	4032	7672	4
+b u r X u	3136	11648	5
+b u s u	3696	7196	4
+b u t u	4032	7672	4
+b u y r u	5320	18704	5
+b u y u	3360	6720	4
+p a c a	2772	5302	4
+p a c X a	2112	7477	5
+p a h u	2376	5176	4
+p a k i	2574	5774	4
+p a l a m a	6325	28736	6
+p a l i	4290	8450	4
+p a L i	4004	8004	4
+p a L X a L i	5390	47137	7
+p a L q a	4620	13874	5
+p a l t a	5610	16177	5
+p a m X a	1760	6603	5
+p a n i	3718	7558	4
+p a n X a c a	4136	34766	7
+p a n q a	4290	13213	5
+p a n t a	4862	14727	5
+p a n t i	5642	18682	5
+p a X a L i	3619	23183	6
+p a	0	0	2
+p a r i	4004	8004	4
+p a r k i	4942	16680	5
+p a r l a	6160	17819	5
+p a r X a	2464	8351	5
+p a r q o	4900	15382	5
+p a r w a y u	6842	49657	7
+p a s a	2541	4961	4
+p a t a	2772	5302	4
+p a t i L a	8584	36908	6
+p a w i	2574	5774	4
+p a w n a	3564	12456	5
+p a x X a	1584	6166	5
+p a y i	2860	6220	4
+p a y L a	4180	13874	5
+p a y X a c a	3608	30644	7
+p a y t a	3740	12552	5
+p e q a	3360	6220	4
+p e q o	3680	7060	4
+p e x t u	4680	17564	5
+P a h s a	3267	11858	5
+P a l a	3630	6776	4
+P a l k a	4785	14498	5
+P a L a	3388	6413	4
+P a L X a	2618	8888	5
+P a n g a	4147	13178	5
+P a n d a	5005	15554	5
+P a N a	2904	5687	4
+P a p a L i	6424	35383	6
+P a X a	726	2420	4
+P a	0	0	2
+P a s a	2662	5324	4
+P a d a	2904	5687	4
+P a d i	3564	7612	4
+P a t a	2904	5687	4
+P a t u	3300	6842	4
+P a w a	2178	4598	4
+P a x c a	3465	12518	5
+P a x p a	3069	11198	5
+P a x s i	3762	15158	5
+P e s q a	4906	16049	5
+P i z i	5184	10112	4
+P i z u	4800	9112	4
+P i c a	4224	7612	4
+P i C a	4576	8085	4
+P i C u	5200	9666	4
+P i c u	4800	9112	4
+P i g i	3888	8288	4
+P i L m a	6244	18608	5
+P i L X a	3598	11573	5
+P i n a	4576	8085	4
+P i n z a	6500	19689	5
+P i N u	4800	9112	4
+P i r i	6048	11328	4
+P i r u	5600	10220	4
+P i s a	3872	7139	4
+P i s i	4752	9504	4
+P i s k a	4609	15158	5
+P i s K u	5236	18608	5
+P i s k u	4906	17603	5
+P i s n a	5797	18722	5
+P i s t u r u	10992	78774	7
+P i s w a	4609	15158	5
+P o g e	3159	7031	4
+P o q a	2860	5643	4
+P o q e	3510	7558	4
+P o Q a	3146	6050	4
+P o r q e	6062	20536	5
+P o x o	2808	5954	4
+P o x t u	4203	16165	5
+P u z u	4200	8204	4
+P u c a	3696	6842	4
+P u C a	4004	7271	4
+P u h a n t a	7491	53774	7
+P u h u	3150	6692	4
+P u g i	3402	7450	4
+P u K u	3500	7196	4
+P u k u c u	7014	36986	6
+P u L z u	6860	21812	5
+P u L u	4900	9212	4
+P u n a	4004	7271	4
+P u N a	3696	6842	4
+P u X u	1050	3668	4
+P u r i	5292	10220	4
+P u r k a	5306	16097	5
+P u r m u	6076	19712	5
+P u r u	4900	9212	4
+P u s a	3388	6413	4
+P u s n o	5555	18932	5
+P u s u	3850	7700	4
+P u d i	4536	9112	4
+P u T u	4550	8708	4
+P u t i	4536	9112	4
+P u y u	3500	7196	4
+p i c a	4032	7112	4
+p i c i k a	8304	36418	6
+p i c u	4608	8528	4
+p i k i	3744	7744	4
+p i l i	6240	11200	4
+p i L u	5376	9576	4
+p i n a k i	7239	37933	6
+p i n k a	5239	15901	5
+p i n k i L u	10976	77966	7
+p i r t i	7616	24592	5
+p i r w a	5642	16680	5
+p i s i	4576	8896	4
+p i t a	4032	7112	4
+p i t h a	4836	15122	5
+p i t u	4608	8528	4
+p i w	1440	1440	3
+p i y a	3360	6220	4
+p o n q o	5070	16237	5
+p o q e	3380	7060	4
+p u c u	4032	7672	4
+p u k a	2646	5176	4
+p u k u	3024	6244	4
+p u L u L i	10584	50512	6
+p u l u	5040	9100	4
+p u m X i	2300	10252	5
+p u n c u	6188	19788	5
+p u n i	4732	9052	4
+p u n k i	5330	18448	5
+p u n k u	5096	16878	5
+p u N a	3528	6388	4
+p u r a X a	4941	21329	6
+p u r i	5096	9576	4
+p u r u m a	8204	35512	6
+p u s i	4004	8004	4
+p u s t u	5236	17924	5
+p u t a	3528	6388	4
+p u t u	4032	7672	4
+p u w u	3024	6244	4
+p u y a	2940	5580	4
+p u y L u	5320	18704	5
+p u y t a	4400	14628	5
+G a c a	2772	5302	4
+G a C i	3718	7558	4
+G a c u	3168	6388	4
+G a l a	3465	6325	4
+G a L u	3696	7196	4
+G a l t a	5610	16177	5
+G a l T i	6915	21463	5
+G a m a	2310	4620	4
+G a n u	3432	6792	4
+G a N u	3168	6388	4
+G a P a	2541	4961	4
+G a P i	3146	6666	4
+G a p i	2860	6220	4
+G a	0	0	2
+G a s a	2541	4961	4
+G a t a	2772	5302	4
+G a w a	2079	4279	4
+G a w c i	3906	15122	5
+G a w e	2574	5774	4
+G a w i	2574	5774	4
+G a x a	2079	4279	4
+G a x c a	3366	11827	5
+G a x o	2277	4877	4
+G a y a	2310	4620	4
+G a y m a	3300	11230	5
+G a y T i	4610	16828	5
+G e C u	4992	9052	4
+G e c i	4992	9472	4
+G e L i	5824	10624	4
+G e L u	5376	9576	4
+G e n a	4368	7558	4
+G e n X o	3211	11569	5
+G e p i	4160	8320	4
+G e r u	5376	9576	4
+G e t a	4032	7112	4
+G e T a	4368	7558	4
+G e w a	3024	5774	4
+G e w i	3744	7744	4
+G e w s a	4113	14343	5
+G e w t a	4356	15122	5
+G e x o	3312	6562	4
+G e y a	3360	6220	4
+G o c a	3276	6026	4
+G o c u	3744	7244	4
+G o l i	5070	9550	4
+G o L u	4368	8148	4
+G o l t i	7170	22546	5
+G o m a	2730	5260	4
+G o n a	3549	6409	4
+G o p i	3380	7060	4
+G o X e	1014	3574	4
+G o	0	0	2
+G o r u t a	8568	37190	6
+G o s u	3432	6792	4
+G o t i	4056	8056	4
+G o t u	3744	7244	4
+G o y a	2730	5260	4
+G o y u	3120	6340	4
+q a c a	2772	5302	4
+q a c u	3168	6388	4
+q a l a	3465	6325	4
+q a L a	3234	5984	4
+q a L p a	4620	13874	5
+q a L t a	5236	15452	5
+q a L u	3696	7196	4
+q a m a	2310	4620	4
+q a m i r i	8684	41228	6
+q a n c i	5642	18682	5
+q a n t a	4862	14727	5
+q a N a	2772	5302	4
+q a N u	3168	6388	4
+q a p a	2310	4620	4
+q a p u	2640	5580	4
+q a X a	693	2233	4
+q a X e	858	3098	4
+q a X o	759	2579	4
+q a	0	0	2
+q a r i	4004	8004	4
+q a r h a	4312	13085	5
+q a r k a	4312	13085	5
+q a r p a	4620	13874	5
+q a r X a	2464	8351	5
+q a r w a	4312	13085	5
+q a s a	2541	4961	4
+q a t a	2772	5302	4
+q a w a	2079	4279	4
+q a w i	2574	5774	4
+q a w	990	990	3
+q a x a	2079	4279	4
+q a y m a	3300	11230	5
+q e c i	4992	9472	4
+q e l a	5040	8450	4
+q e L a y a	7454	33858	6
+q e L X a	3374	10896	5
+q e L w a	5642	16680	5
+q e l X a	3615	11453	5
+q e l u	5760	10100	4
+q e m i	4160	8320	4
+q e n a	4368	7558	4
+q e n c a	6292	18682	5
+q e p a	3360	6220	4
+q e p u	3840	7480	4
+q e r i	5824	10624	4
+q e r u	5376	9576	4
+q e s a	3696	6666	4
+q e s u	4224	8004	4
+q e w a	3024	5774	4
+q e w i	3744	7744	4
+q e w L a	4842	16680	5
+q e w t a	4356	15122	5
+q e x a y u	5554	30910	6
+q e y a	3360	6220	4
+Q a z a	2904	5687	4
+Q a z u	3300	6842	4
+Q a c X a	2244	7964	5
+Q a L a L i	8008	41691	6
+Q a n a	3146	6050	4
+Q a n X a	2431	8426	5
+Q a n u n a	7943	35806	6
+Q a P i	3267	7139	4
+Q a	0	0	2
+Q a s X a	2057	7502	5
+Q a t a	2904	5687	4
+Q a T a	3146	6050	4
+Q a t i	3564	7612	4
+Q a t u	3300	6842	4
+Q a w L u	4239	16097	5
+Q a w X a	1683	6578	5
+Q a x a	2178	4598	4
+Q e z a	4224	7612	4
+Q e L a	4928	8558	4
+Q e n c a	6500	19689	5
+Q e n i	5616	10720	4
+Q e p a	3520	6666	4
+Q e P a	3872	7139	4
+Q e r i	6048	11328	4
+Q e r X e	3808	14958	5
+Q e r w a	5866	17603	5
+Q e s a m i	6842	38145	6
+Q e s i	4752	9504	4
+Q e s p i	5456	20314	5
+Q e s X a	2827	9812	5
+Q e s t i	6160	22476	5
+Q e s w a	4609	15158	5
+Q e w i	3888	8288	4
+Q e x o	3456	7031	4
+Q e y a	3520	6666	4
+Q o z a	3432	6457	4
+Q o z u	3900	7750	4
+Q o c i	4212	8612	4
+Q o L i	4914	9666	4
+Q o L u	4550	8708	4
+Q o l u	4875	9187	4
+Q o m a	2860	5643	4
+Q o n a	3718	6864	4
+Q o b a k i	5434	31048	6
+Q o b i	3510	7558	4
+Q o p a	2860	5643	4
+Q o p i	3510	7558	4
+Q o X o	936	3224	4
+Q o	0	0	2
+Q o r X o	3094	11148	5
+Q o r u	4550	8708	4
+Q o s i	3861	8085	4
+Q o s X o	2431	9450	5
+Q o d a	3432	6457	4
+Q o d i	4212	8612	4
+Q o t u t i	8604	43530	6
+Q o x o	2808	5954	4
+Q o y a	2860	5643	4
+q o c a	3276	6026	4
+q o l i	5070	9550	4
+q o L a	3822	6792	4
+q o L i	4732	9052	4
+q o L m u	5600	17848	5
+q o L p a	5180	15382	5
+q o L X e	3038	12184	5
+q o L u	4368	8148	4
+q o l X e	3255	12799	5
+q o l t u	6810	20684	5
+q o l u	4680	8600	4
+q o m i	3380	7060	4
+q o n c u	5902	18892	5
+q o n X o	2704	9958	5
+q o n t u	5902	18892	5
+q o n u	4056	7696	4
+q o N a	3276	6026	4
+q o N c u	5448	17996	5
+q o p a	2730	5260	4
+q o p u	3120	6340	4
+q o	0	0	2
+q o r i	4732	9052	4
+q o r p a	5180	15382	5
+q o r u m i	8568	41528	6
+q o r w a	4844	14523	5
+q o t a	3276	6026	4
+q o t u	3744	7244	4
+q o w u	2808	5888	4
+q o y r i	5360	19492	5
+r a k u t i	6972	39848	6
+r a m a	2750	5984	4
+r i s h a	5137	17603	5
+r i y a t a	6772	36908	6
+s a c a L a	6446	31592	6
+s a h a	2178	4598	4
+s a k i	2673	6193	4
+s a L a	3388	6413	4
+s a L i	4158	8558	4
+s a L q a	4774	14663	5
+s a l t a	5775	17072	5
+s a l u	4125	8129	4
+s a m a	2420	4961	4
+s a m i	2970	6666	4
+s a m k a	3190	11198	5
+s a m b a	3410	11891	5
+s a n a	3146	6050	4
+s a n i	3861	8085	4
+s a n g a	4147	13178	5
+s a n k a	4147	13178	5
+s a n K u	4823	16241	5
+s a n G a	4433	13970	5
+s a n X a	2431	8426	5
+s a n u	3575	7271	4
+s a N a	2904	5687	4
+s a N u	3300	6842	4
+s a p a	2420	4961	4
+s a P i	3267	7139	4
+s a G a	2420	4961	4
+s a q a	2420	4961	4
+s a Q a	2662	5324	4
+s a	0	0	2
+s a r i	4158	8558	4
+s a r u	3850	7700	4
+s a r x e	5096	17603	5
+s a X i	891	3355	4
+s a d a	2904	5687	4
+s a t a	2904	5687	4
+s a w i	2673	6193	4
+s a w k a	2871	10538	5
+s a w u	2475	5555	4
+s a x a	2178	4598	4
+s a x m a	3069	11198	5
+s a x	1089	1089	3
+s a x X a	1683	6578	5
+s a y a	2420	4961	4
+s a y n a	4070	13970	5
+s a y d a	3850	13277	5
+s a y d u	4210	15452	5
+s a y w a	3190	11198	5
+s e L G e	6944	23428	5
+s e n q a r p u	10838	104877	8
+s e G e	4320	8896	4
+s e G o	3840	7558	4
+s e q e	4320	8896	4
+s e x e	3888	8288	4
+s e x X i	2448	11273	5
+s i z i	5184	10112	4
+s i h X i m p i	6128	77409	8
+s i K a	3520	6666	4
+s i k i l i	9888	51613	6
+s i k u	3600	7450	4
+s i L b a	6244	18608	5
+s i L b i	6944	23428	5
+s i L G e	6944	23428	5
+s i L G o	6524	20536	5
+s i L u	5600	10220	4
+s i l d u	8040	24802	5
+s i m p a	4460	15196	5
+s i n c a	6500	19689	5
+s i n i y a	9456	41387	6
+s i n g a	5447	16788	5
+s i n g u	5798	19449	5
+s i n K a	5798	17755	5
+s i n k i	6032	21223	5
+s i n r u	7748	24884	5
+s i n t i	7280	24724	5
+s i b u	4000	8004	4
+s i p i	4320	8896	4
+s i	0	0	2
+s i r i	6048	11328	4
+s i r g i	6496	22218	5
+s i r g u	6244	20372	5
+s i r k a	5866	17603	5
+s i r K a	6244	18608	5
+s i r w i	6496	22218	5
+s i X a	1056	3355	4
+s i X u	1200	4126	4
+s i t i k a	8496	38037	6
+s i w a	3168	6193	4
+s o n q o	5239	17134	5
+s o G a	2860	5643	4
+s o r o x c i	9138	68602	7
+s o x a	2574	5236	4
+s o x o	2808	5954	4
+s o x t a	3879	13900	5
+s u z i	4536	9112	4
+s u c u	4200	8204	4
+s u h a	2772	5555	4
+s u h X a	2061	7814	5
+s u g a	2772	5555	4
+s u g u	3150	6692	4
+s u k a	2772	5555	4
+s u L a	4312	7700	4
+s u L k a	5306	16097	5
+s u L P a	6006	17963	5
+s u L q o	5936	18818	5
+s u L d u	6860	21812	5
+s u L u	4900	9212	4
+s u l P a	6435	18788	5
+s u l u	5250	9716	4
+s u m a	3080	5984	4
+s u m i	3780	8004	4
+s u n a q e	7194	38433	6
+s u n i	4914	9666	4
+s u n K a	5252	16241	5
+s u n u	4550	8708	4
+s u p a y a	5390	27613	6
+s u p u	3500	7196	4
+s u r a w i	7282	38225	6
+s u r i	5292	10220	4
+s u r u	4900	9212	4
+s u X u	1050	3668	4
+s u d i	4536	9112	4
+s u t i	4536	9112	4
+s u t u	4200	8204	4
+s u w i	3402	7450	4
+s u y u	3500	7196	4
+d a h a	2277	4917	4
+d a h s a	3366	12518	5
+d a k u	2574	5934	4
+d a l a	3795	7227	4
+d a l h a	4950	15282	5
+d a l P a	5610	17072	5
+d a m a	2530	5302	4
+d a m P a	3740	13277	5
+d a m t a	3960	14002	5
+d a n s a	4862	15554	5
+d a n X a	2574	8938	5
+d a p a	2530	5302	4
+d a P i	3388	7612	4
+d a q a	2530	5302	4
+d a q e	3080	7112	4
+d a Q e	3388	7612	4
+d a r w a	4620	14591	5
+d a s a	2783	5687	4
+d a w	1188	1188	3
+d a x a	2277	4917	4
+d a x L i	4590	18526	5
+d a x m a	3168	11827	5
+d a x	1188	1188	3
+d a x s a	3366	12518	5
+d a x t a	3564	13209	5
+d a x w i	3375	14271	5
+d e q e	4480	9472	4
+d e x e	4032	8832	4
+d i h c a	4644	16824	5
+d i h i	4032	8832	4
+d i h m i	4608	19192	5
+d i h n a	4887	17675	5
+d i h u	3744	7944	4
+d i l i	6720	12672	4
+d i L m i	7168	24592	5
+d i m P i	5440	21352	5
+d i n k a	5655	17675	5
+d i n K a	6006	18682	5
+d i n k i	6240	22300	5
+d i n Q o	6643	21703	5
+d i n X i	3744	15028	5
+d i N i	5376	10752	4
+d i r i	6272	12032	4
+d i r k a	6090	18526	5
+d i s a	4048	7612	4
+d i s i	4928	10112	4
+d i s k u	5082	18526	5
+d i s n u	6402	22710	5
+d i s N a	5676	18760	5
+d i w K a	4158	15122	5
+d i w u	3744	7944	4
+d o q e	3640	8056	4
+d o q o	3250	6838	4
+d o x e	3276	7500	4
+d o x n u	4563	17879	5
+d o x o	2925	6357	4
+d o x	1404	1404	3
+d u K a	3220	6388	4
+d u k u	3276	7140	4
+d u L K u	6272	20720	5
+d u L k u	5880	19628	5
+d u l X u	3780	13728	5
+d u n a	4186	7750	4
+d u n h a	5109	16165	5
+d u r i	5488	10864	4
+d u r h a	5502	16952	5
+d u r m i	6552	22584	5
+d u r u	5096	9800	4
+d u s t i	5808	21664	5
+d u s u	4004	8204	4
+t a k a r p u	7163	53603	7
+t a k i	2772	6612	4
+t a k u	2574	5934	4
+t a l a	3795	7227	4
+t a L a	3542	6842	4
+t a L i	4312	9112	4
+t a L m a	4928	15452	5
+t a l X a	2970	9912	5
+t a l u	4290	8658	4
+t a m a	2530	5302	4
+t a m p u	3820	14628	5
+t a n q a	4576	14727	5
+t a n s a	4862	15554	5
+t a n X a	2574	8938	5
+t a n X i	2769	11633	5
+t a p a	2530	5302	4
+t a q e	3080	7112	4
+t a q p a c a	6292	46475	7
+t a	0	0	2
+t a r i	4312	9112	4
+t a r k a k a	6600	46094	7
+t a r m a	4928	15452	5
+t a r q a	4928	15452	5
+t a r u	4004	8204	4
+t a s a	2783	5687	4
+t a s u	3146	6842	4
+t a t a	3036	6072	4
+t a w a q o	4697	26400	6
+t a w q a	3168	11827	5
+t a w r i	4590	18526	5
+t a w u	2574	5934	4
+t a x a	2277	4917	4
+t a y k a	3300	11827	5
+t a y n a	4180	14727	5
+t a y p i	4020	16012	5
+t a y r u	4820	17924	5
+t e q e	4480	9472	4
+t e r e	6272	12032	4
+t e x e	4032	8832	4
+T a h a	2376	5236	4
+T a K i	3190	7558	4
+T a k i	2871	7031	4
+T a l a	3960	7678	4
+T a L m i	5782	20536	5
+T a l X a	3135	10474	5
+T a m a	2640	5643	4
+T a m i	3190	7558	4
+T a m p a	3630	13213	5
+T a n i	4147	9139	4
+T a n q a	4719	15484	5
+T a n s a	5005	16346	5
+T a n X a	2717	9450	5
+T a N a	3168	6457	4
+T a p a	2640	5643	4
+T a q a	2640	5643	4
+T a Q a	2904	6050	4
+T a r p i	5782	20536	5
+T a s k i	4246	16788	5
+T a s n u	5148	18932	5
+T a X a	792	2794	4
+T a X u	891	3439	4
+T a w i	2871	7031	4
+T a x a	2376	5236	4
+T a x w a	3069	11734	5
+T a y a	2640	5643	4
+T a y L i	5210	20536	5
+T e x e	4176	9376	4
+T e x h a	4059	15014	5
+T e x n i	5616	23377	5
+T i h L a	5274	19449	5
+T i h t a	4788	17675	5
+T i h w a	4059	15014	5
+T i X i	1392	5344	4
+T i y a	3840	7558	4
+T o q n a	4810	17134	5
+T o q o	3380	7267	4
+T o q t a	4570	16309	5
+T u h i	3654	8438	4
+T u h r u	5166	20594	5
+T u h s a	4113	15344	5
+T u L i	5684	11508	4
+T u l u	5670	10948	4
+T u n a	4368	8229	4
+T u n i	5278	10894	4
+T u n K u	6006	20758	5
+T u r i	5684	11508	4
+T u r u	5292	10388	4
+T u s a	3696	7271	4
+T u s n u	6006	21851	5
+T u s u	4158	8708	4
+T u X a	1008	3439	4
+T u X u	1134	4228	4
+t i h a	3312	6612	4
+t i k a	3312	6612	4
+t i k i l i	10032	53668	6
+t i l a	5520	9612	4
+t i L u	5824	10864	4
+t i m a	3680	7112	4
+t i n k u	6006	20450	5
+t i N i	5376	10752	4
+t i	0	0	2
+t i r s u	7308	23756	5
+t i s i	4928	10112	4
+t i X i	1344	4992	4
+t i w i	4032	8832	4
+t i w t i	5184	21264	5
+t i w u l a	7944	41371	6
+t i y a	3680	7112	4
+t i y i	4480	9472	4
+t i y u	4160	8528	4
+t o L q a	5544	17100	5
+t o n q o	5408	18031	5
+t o q a	2990	6026	4
+t o q e	3640	8056	4
+t o q o	3250	6838	4
+t o x o	2925	6357	4
+t u h i	3528	7944	4
+t u k u	3276	7140	4
+t u l i	5880	11448	4
+t u L p a	5852	17924	5
+t u m a	3220	6388	4
+t u m p a	4180	14628	5
+t u n k a	5109	16165	5
+t u n X i	3354	13670	5
+t u n u	4732	9268	4
+t u p a	3220	6388	4
+t u p u	3640	7672	4
+t u r i	5488	10864	4
+t u r k a	5502	16952	5
+t u r k i	6132	21412	5
+t u r m i	6552	22584	5
+t u r n u	7448	23996	5
+t u r p a	5852	17924	5
+t u r u	5096	9800	4
+t u s u L i	9296	48788	6
+t u X i	1176	4440	4
+t u X u k a	2856	21245	6
+t u y u	3640	7672	4
+w a C a	2860	5236	4
+w a z a	2640	4917	4
+w a z i	3300	6612	4
+w a C i	3575	7031	4
+w a c u	3036	5934	4
+w a h a	1980	3960	4
+w a h c a	3267	11136	5
+w a h i	2475	5355	4
+w a g a	1980	3960	4
+w a k a	1980	3960	4
+w a k i	2475	5355	4
+w a k u L a	6197	28544	6
+w a l i	4125	7869	4
+w a l h a	4455	12930	5
+w a L a q e	6380	32333	6
+w a L i	3850	7450	4
+w a L p a	4466	13085	5
+w a L G e	5166	16680	5
+w a L q a	4466	13085	5
+w a L u	3542	6692	4
+w a l p a c a	7557	49718	7
+w a l u r u	9479	41567	6
+w a m a	2200	4279	4
+w a m p u	3490	12366	5
+w a n i	3575	7031	4
+w a n g u	4212	13702	5
+w a n k a	3861	11734	5
+w a n q a	4147	12456	5
+w a n T i	5850	18562	5
+w a n u	3289	6313	4
+w a N a	2640	4917	4
+w a p a	2200	4279	4
+w a p u	2530	5176	4
+w a G a	2200	4279	4
+w a q a n k i	6789	49282	7
+w a q e	2750	5774	4
+w a	0	0	2
+w a r i	3850	7450	4
+w a r h a	4158	12332	5
+w a r K u	4886	15242	5
+w a r k u	4536	14387	5
+w a r m i	5166	16680	5
+w a r p u	4886	15242	5
+w a r u s a	7392	31310	6
+w a s a	2420	4598	4
+w a s i t a	7249	31142	6
+w a s u r u	7683	35459	6
+w a d a	2640	4917	4
+w a t a	2640	4917	4
+w a t i	3300	6612	4
+w a X a	660	2046	4
+w a X s a	1023	6578	5
+w a x	891	891	3
+w a x d a	3267	11136	5
+w a y g a	2970	9940	5
+w a y g u	3240	11647	5
+w a y k a	2970	9940	5
+w a y L a q a	6820	44398	7
+w a y L u	4490	15242	5
+w a y n a	3850	12456	5
+w a y N u	3990	13804	5
+w a y	990	990	3
+w a y s a	3410	11198	5
+w a y t a	3630	11827	5
+w a y u	2530	5176	4
+w a y X a	1650	6166	5
+w e n q a L a	8616	59412	7
+w e n Q a	5733	16788	5
+w e G a	3200	5774	4
+w e G o	3520	6562	4
+w e q o	3520	6562	4
+w e x r u	5076	18292	5
+w i z a	3840	6612	4
+w i z i	4800	8832	4
+w i z u	4416	7944	4
+w i C u	4784	8438	4
+w i c i	4800	8832	4
+w i k a	2880	5355	4
+w i K a	3200	5774	4
+w i K u	3680	6956	4
+w i k u	3312	6462	4
+w i l a	4800	7869	4
+w i L i	5600	9920	4
+w i L g i	6048	19982	5
+w i n a	4160	7031	4
+w i n k u	5382	17447	5
+w i n t u	6552	20450	5
+w i P i	4400	8288	4
+w i p s u	4740	16680	5
+w i q o r u	7888	39742	6
+w i r i	5600	9920	4
+w i r K i	6496	21100	5
+w i r u	5152	8932	4
+w i s a	3520	6193	4
+w i s i	4400	8288	4
+w i s g a c a	6897	49394	7
+w i s k a	4257	13528	5
+w i s K a	4554	14343	5
+w i s K u	4884	16680	5
+w i s k u L u	9062	65765	7
+w i s L a	5742	17603	5
+w i s d u	5544	18526	5
+w i d i L u	10624	48228	6
+w i d u	4416	7944	4
+w i T u	4784	8438	4
+w i t i	4800	8832	4
+w i y a	3200	5774	4
+w i y K u	4440	15796	5
+w i y P i	4960	18238	5
+w i y t a	4680	15122	5
+w o s G o	4147	13834	5
+w u y a	2800	5176	4
+y a c a	2772	5302	4
+y a h a	2079	4279	4
+y a l a	3465	6325	4
+y a m a s a	4851	24244	6
+y a m p u	3600	13120	5
+y a n a	3003	5643	4
+y a n i	3718	7558	4
+y a n h a	4004	12456	5
+y a n Q a	4576	13970	5
+y a n d a	4862	14727	5
+y a p a	2310	4620	4
+y a p k a	3080	10569	5
+y a p u	2640	5580	4
+y a G a	2310	4620	4
+y a q e	2860	6220	4
+y a Q a	2541	4961	4
+y a Q e p a	6666	29859	6
+y a r T u	6090	18818	5
+y a r u t a	7896	34226	6
+y a r w i	4942	16680	5
+y a r w i n K a	10324	89472	8
+y a t i	3432	7112	4
+y a t k a	3696	11827	5
+y a w i	2574	5774	4
+y a w r i	4392	16680	5
+y a X h a	924	6166	5
+y a X u	792	2752	4
+y o q a	2730	5260	4
+y o q e	3380	7060	4
+y o x z a	3762	13145	5
+y u k u	3024	6244	4
+y u n k a	4745	14523	5
+y u n t a	5720	17100	5
+y u N a	3528	6388	4
+y u p a	2940	5580	4
+y u r i	5096	9576	4
+y u r u	4704	8624	4
+y u s p a	4290	13874	5
+a c a X i	2376	10399	5
+a c a k u	4026	14591	5
+a c a l a	5247	17072	5
+a c i k a	5424	15973	5
+a c i w a	5424	15973	5
+a c o q a L a	7940	55930	7
+a c t a	3168	6072	4
+a c u	1848	1848	3
+a C i h u	6176	19449	5
+a C i w a	5744	16788	5
+a h a n u	4378	15344	5
+a h a	1089	1089	3
+a h a y u	3619	13085	5
+a h L i	3402	7450	4
+a h u	1386	1386	3
+a k a	1089	1089	3
+a k i L a	6064	17603	5
+a k u L i	6286	20372	5
+a k u	1386	1386	3
+a l a	1815	1815	3
+a l a X a	2673	9350	5
+a l e q a	6800	19461	5
+a l i	2640	2640	3
+a l i s i	8096	25719	5
+a l i t a	7632	21547	5
+a l k a	2970	5874	4
+a l m a	3300	6325	4
+a l q a	3300	6325	4
+a l w a	2970	5874	4
+a L C i	4914	9666	4
+a L e q a	6464	18608	5
+a L i	2464	2464	3
+a L i	2464	2464	3
+a L m i X a	4788	23183	6
+a L p i	3780	8004	4
+a L q a	3080	5984	4
+a L u	2156	2156	3
+a m a l a	4675	15356	5
+a m a r u	4906	17030	5
+a m a y a	3520	11891	5
+a m i t a	5792	16902	5
+a m p a	2200	4620	4
+a m u	1540	1540	3
+a m u l i	7000	22464	5
+a m u L i	6636	21500	5
+a m u t u	5572	17924	5
+a m u y a	4480	13874	5
+a n a k i	4444	16788	5
+a n a z u y u	8777	62215	7
+a n a q a	4213	13970	5
+a n a t a	4741	15554	5
+a n c a	3432	6457	4
+a n C i X a	5715	25546	6
+a n i	2288	2288	3
+a n k u	2925	6313	4
+a n k u t a	6285	31400	6
+a n q a	2860	5643	4
+a n s a	3146	6050	4
+a n s u	3575	7271	4
+a n t a	3432	6457	4
+a n t i s a X a	8986	71308	8
+a n t u	3900	7750	4
+a n u	2002	2002	3
+a N a c u	4884	17174	5
+a p a	1210	1210	3
+a p a c i t a	9058	57689	7
+a p a m u k u t a	10234	121334	9
+a p a q a	3520	11891	5
+a p a r a n a	8019	53894	7
+a p i	1760	1760	3
+a p i L a	6464	18608	5
+a p i k i p a	8704	56873	7
+a q a c i r i	10914	73212	7
+a q a L p u	6250	31360	6
+a q a n t a	6072	28994	6
+a q a r a p i	7744	57453	7
+a q a	1210	1210	3
+a q a y a t a	6292	44716	7
+a q o	1430	1430	3
+a r a s a	4719	15488	5
+a r i	2464	2464	3
+a r k a n i	6347	36752	6
+a r k u	3150	6692	4
+a r m a	3080	5984	4
+a r n a q e r i	13018	125163	8
+a r s u r i	9142	46890	6
+a r u	2156	2156	3
+a s a n k a	5478	26444	6
+a s a	1331	1331	3
+a s i r u	7536	22628	5
+a s k i	2673	6193	4
+a s n u	3575	7271	4
+a s t a	2904	5687	4
+a t e q a	5792	16902	5
+a t i	2112	2112	3
+a t i p a	5792	16902	5
+a t i p i r i	12416	86132	7
+a w a L a	4169	13838	5
+a w a t i r i	10661	70559	7
+a w a y u	3619	13085	5
+a w i c a	5424	15973	5
+a w i l a	6384	18418	5
+a w i s p a	6138	28478	6
+a w i t u	6000	18526	5
+a w k i	2187	5355	4
+a w k i l i	8187	39188	6
+a w t i	2916	6612	4
+a x a c i r i	10661	70559	7
+a x r u	3150	6692	4
+a x s a	2178	4598	4
+a y a	1210	1210	3
+a y c a	2640	5302	4
+a y L u	3500	7196	4
+a y m a	2200	4620	4
+a y n a c a	6028	28994	6
+a y n i	3510	7558	4
+a y n o q a	6240	28904	6
+a y q o	2400	5260	4
+a y r i	3780	8004	4
+a y r u	3500	7196	4
+a y s a	2420	4961	4
+a y t i l i	9960	46462	6
+a y t i	3240	7112	4
+a y u n a	5362	16241	5
+a y w i n i	7630	37933	6
+e q a	1760	1760	3
+e q a l a	5225	19461	5
+e q a	1760	1760	3
+e q e q o	6240	21268	5
+i c u	2688	2688	3
+i c u r i	8176	29616	5
+i h m a	2430	5774	4
+i k i	2304	2304	3
+i l a k i	5709	23213	5
+i l u	3360	3360	3
+i L a	2464	2464	3
+i L a p a	5214	18608	5
+i L a w a	4939	17603	5
+i L p a	3780	8004	4
+i m a	1760	1760	3
+i m a w i	4334	18238	5
+i m i L a	7264	23428	5
+i n a	2288	2288	3
+i n a c a	5456	19689	5
+i n a k i	5159	21223	5
+i n a k i	5159	21223	5
+i n a n u	6149	23797	5
+i n a s a	5192	18722	5
+i n C i	5408	12064	4
+i n e q e	7968	28000	5
+i n k u	3510	8438	4
+i n t i	4992	11392	4
+i p a	1760	1760	3
+i p i	2560	2560	3
+i	0	0	1
+i r a y a	5214	18608	5
+i r k a t a	6042	35279	6
+i r n a q e r i	13928	144018	8
+i r p a	3780	8004	4
+i r p i r i	10304	58088	6
+i r t a	4536	9112	4
+i r u	3136	3136	3
+i s z u k i r i	13088	135816	8
+i s i	2816	2816	3
+i s i L a	7744	24638	5
+i s m u	3300	8004	4
+i s p a	2970	6666	4
+i s p a k u	5346	32333	6
+i s p a L a	6204	35383	6
+i s p i L u	8896	48348	6
+i s t a L a	7106	38537	6
+i s t i	4224	10112	4
+i t u	2688	2688	3
+i w a l a k i	7953	65346	7
+i y a	1760	1760	3
+o L o q e	6266	22624	5
+o n o q e	5967	21619	5
+o n t o q e	7696	41791	6
+o q a	1430	1430	3
+o q e	2080	2080	3
+o q o	1690	1690	3
+o Q a	1573	1573	3
+o G a c a	4202	14727	5
+o r a q e	5302	20536	5
+o r q o	3640	7696	4
+o x e	1872	1872	3
+o x o	1521	1521	3
+o x t a	2592	5595	4
+u c a	1848	1848	3
+u h u	1764	1764	3
+u k a	1386	1386	3
+u k a c i	4686	18526	5
+u k s a	2475	5555	4
+u K a	1540	1540	3
+u K a n X a	3828	20402	6
+u l T u	5460	10948	4
+u l u	2940	2940	3
+u L u k u	6272	21560	5
+u m a	1540	1540	3
+u m a t a	4312	15452	5
+u m c i	3600	8528	4
+u m i	2240	2240	3
+u n o q e	6136	22624	5
+u N a c a	4884	17174	5
+u N a	1848	1848	3
+u N a X c a	3036	21485	6
+u N a q a	4378	15452	5
+u n a	2002	2002	3
+u N i m a	6368	19572	5
+u N i	2688	2688	3
+u p a	1540	1540	3
+u p i	2240	2240	3
+u r a q e	5456	21500	5
+u r i	3136	3136	3
+u r p i	4200	9576	4
+u r p u	3920	8624	4
+u r u	2744	2744	3
+u s z u k i	7224	39848	6
+u s k u	2772	6692	4
+u s u	2156	2156	3
+u t a	1848	1848	3
+u y n a q a	5890	30111	6
+u y s u	3080	7196	4
+u y w a	2250	5176	4
+u y w i r i	8300	44452	6

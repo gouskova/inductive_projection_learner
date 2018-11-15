@@ -24,11 +24,7 @@ def makeJarPaths(basepath):
         return alljar
 
 
-
-
-
-
-def packNatClasses(featfile='maxent2/temp/features.txt'):
+def packNatClasses(featfile=os.path.join('maxent2', 'temp', 'features.txt'):
     '''
     input argument: feature file, converted to command line maxent format.
     by default this is in maxent2/temp/features.txt.
