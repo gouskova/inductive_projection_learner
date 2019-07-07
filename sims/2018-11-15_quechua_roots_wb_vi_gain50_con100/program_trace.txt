@@ -1,0 +1,11 @@
+Running the baseline simulation now.
+Done with baseline simulation.
+
+placeholder constraint found: [-sonorant,-continuant][][+cg]
+constructed a projection for the smallest natural class : 
+-sonorant-continuant
+
+done making a combo projection file from "-wb"-mentioning constraints
+Running simulation using new special projection
+The simulation failed. It might have run out of memory, or there is a problem with your data files. To diagnose the problem, start by checking the contents of maxent2/temp/maxentoutput.txt.
+files have been moved to sims/2018-11-15_quechua_roots_wb_vi_gain50_con100

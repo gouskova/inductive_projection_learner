@@ -1,0 +1,13 @@
+-maxObsVioln	0	 # maximum number of observed violations is Zero; it means only inviolable constraints are learned.
+-test	test.txt	 # test on forms after learning, writing tableau.txt
+-evaluator	gain	 # options are "gain", "observedOverExpected", "grafting"
+-train	 # train weights and write grammar.txt after selection
+-l2	0.00001	 # scale of L2 weight regularizer
+-maxWordLength	8
+-select
+-features	features.txt	 # 
+-gamma	0
+-corpus	corpus.txt
+-maxConSize	150	 # max. number of constraints to learn
+-projections	projections.txt
+-minGain	150	 # threshold that constraint must exceed to be learned
