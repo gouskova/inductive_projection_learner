@@ -210,9 +210,11 @@ if __name__=='__main__':
         filepath=sys.argv[1]
         featurefile = os.path.join(os.getcwd().split('code')[0], 'data', filepath, 'Features.txt')
         datafile = os.path.join(os.getcwd().split('code')[0], 'data', filepath, 'LearningData.txt')
-        x = datachecker.findOrphans(datafile, featurefile, verbose=True)
-        if x:
-            print("Please fix your data file and/or your feature file and test data to continue.")
+        testfile = os.path.join(os.getcwd().split('code')[0], 'data', filepath, 'TestingData.txt')
+        if datachecker.findOrphans(datafile, featurefile, verbose=True):
+            print("Please fix your data file and/or your feature file to continue.")
+        elif os.path.isfile(testfile) and datachecker.findOrphans(testfile, featurefile, verbose=True):
+            print("Please fix your test data file and/or your feature file to continue.")
         else:
             if 'parameters' in sys.argv:
                 parameters = True
