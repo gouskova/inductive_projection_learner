@@ -17,7 +17,7 @@ def collectLDSegs(somepath):
 	try:
 		with open(somepath, 'r', encoding='utf-8') as ldatafile:
 			for line in ldatafile:
-				wordsegs = line.strip('\n').split()
+				wordsegs = line.strip('\n').split('\t')[0].split()
 				for seg in wordsegs:
 					if not seg in segs:
 						segs.append(seg.strip())

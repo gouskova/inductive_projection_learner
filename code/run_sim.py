@@ -14,7 +14,7 @@ import os,shutil, io, contextlib
 import datachecker, simfunc, params, mbsublex
 
 
-def run_mbsublex_sim(language, viol, mgain, nconstraints, mb, gam, parameters):
+def run_mbsublex_sim(language, viol, mgain, nconstraints, mb, gam, parameters, reducemem):
     '''
     this simulation needs a corpus with morpheme boundaries.
     it starts by running a baseline simulation on the corpus.
@@ -36,7 +36,7 @@ def run_mbsublex_sim(language, viol, mgain, nconstraints, mb, gam, parameters):
             params.makeParams(consize=nconstraints, violable=viol, mingain=mgain, gamma=gam, predefault=False)
         simfunc.makeSimFiles(language) 
         print('running the baseline simulation using original training corpus')
-        simfunc.runBaselineSim(basepath, rt_output_baseline=False) #copies grammar, proj, tableau, maxentouptut in maxent2/temp/output_baseline
+        simfunc.runBaselineSim(basepath, reducemem=reducemem, rt_output_baseline=False) #copies grammar, proj, tableau, maxentouptut in maxent2/temp/output_baseline
         mbsublex.move_sublex_files(kind='output_baseline')
     if not 'output_mbsublex_baseline' in dircontent:
         print("Baseline simulation found at " + os.path.join(maxentdir, 'output_baseline'))
@@ -50,7 +50,7 @@ def run_mbsublex_sim(language, viol, mgain, nconstraints, mb, gam, parameters):
                 params.scale_params(inpath=os.path.join(basepath, 'data', language, 'params.txt'), multiply_by=0.01, keepconsize=True)
             else:
                 params.scale_params(viol, gain, consize, gamma, 0.01, True)#last one is keepconsize
-            simfunc.runBaselineSim(basepath, rt_output_baseline=False)
+            simfunc.runBaselineSim(basepath, reducemem=reducemem, rt_output_baseline=False)
             mbsublex.move_sublex_files(kind="output_mbsublex_baseline")
         else:
             print('Did not find any *X-mb-Y trigrams. Quitting now.')
@@ -59,7 +59,7 @@ def run_mbsublex_sim(language, viol, mgain, nconstraints, mb, gam, parameters):
         print("Sublexicon baseline simulation found at " + os.path.join(maxentdir, 'output_mbsublex'))
         mbsublex.makeProjection(basepath, 'wb', mb=True)
         print('projections found--running a projection simulation on morph sublexicon')
-        simfunc.runCustomSim(simtype='wb')
+        simfunc.runCustomSim(reducemem=reducemem, simtype='wb')
         mbsublex.move_sublex_files(kind='output_mbsublex')
     if not 'output_final' in dircontent:
         mbsublex.rename_corpus_back()
@@ -68,7 +68,7 @@ def run_mbsublex_sim(language, viol, mgain, nconstraints, mb, gam, parameters):
             params.scale_params(inpath=os.path.join(basepath, 'data', language, 'params.txt'), multiply_by=1, keepconsize=True)
         else:
             params.scale_params(viol, gain, consize, gamma, 10, True)
-        simfunc.runCustomSim(simtype='wb')
+        simfunc.runCustomSim(reducemem=reducemem, simtype='wb')
         mbsublex.move_sublex_files(kind='output_final')
     print('done!')
     try:
@@ -77,7 +77,7 @@ def run_mbsublex_sim(language, viol, mgain, nconstraints, mb, gam, parameters):
         print("The simulation failed for some reason. Check the contents of " + maxentdir + " to help with debugging.")
 
 
-def run_wb_sim(language, viol, mgain, nconstraints, mb, gam, parameters):
+def run_wb_sim(language, viol, mgain, nconstraints, mb, gam, parameters, reducemem):
     '''
     this learning simulation is described in Gouskova and Gallagher (NLLT). The learner starts with a baseline
     grammar; if this grammar contains placeholder trigrams, it creates projections for each distinct trigram and runs a final simulation with those projections available.
@@ -91,19 +91,19 @@ def run_wb_sim(language, viol, mgain, nconstraints, mb, gam, parameters):
         params.makeParams(consize=nconstraints, violable=viol, mingain=mgain, gamma=gam, predefault=False)
     simfunc.makeSimFiles(language)
     #baseline simulation
-    simfunc.runBaselineSim(basepath)
+    simfunc.runBaselineSim(basepath, reducemem=reducemem)
     #analyze resulting grammar.txt file, make projections for each wb-mentioning constraint
     simfunc.makeProjection(basepath, 'wb', mb)
     if len(os.listdir('projections'))==0:
         print('\nNo projections were found because there were no placeholder constraints in the baseline grammar.')
     else:
-        simfunc.runCustomSim(simtype= 'wb')
+        simfunc.runCustomSim(reducemem=reducemem, simtype= 'wb')
     vio = viol[0:2]
     wrapstring = os.path.join('sims',language.replace(os.sep,"_")) + "_" + '_'.join(['wb',vio,'gain'+str(mgain),'con'+str(nconstraints)])
     return simfunc.wrapSims(wrapstring, ret=True)
 
 
-def run_baseline_sim(language, viol, mgain, nconstraints, mb, gam, parameters):
+def run_baseline_sim(language, viol, mgain, nconstraints, mb, gam, parameters, reducemem):
     '''
     this function runs the baseline simulation with a default (segmental) projection
     if it does not succeed, it does not fail gracefully, so be forwarned
@@ -118,7 +118,7 @@ def run_baseline_sim(language, viol, mgain, nconstraints, mb, gam, parameters):
         params.makeParams(consize=nconstraints, violable=viol, mingain=mgain, gamma=gam, predefault=False)
     simfunc.makeSimFiles(lgfullpath)
     try:
-        simfunc.runBaselineSim(basepath, reducemem=False)
+        simfunc.runBaselineSim(basepath, reducemem=reducemem)
         #language=language.split('../data/')[1].replace('/','_')
         wrapstring = os.path.join('sims', language.replace(os.sep, "_") +'_baseline' + '_gain'+mgain + '_con' + nconstraints)
         simfunc.wrapSims(wrapstring)
@@ -126,7 +126,7 @@ def run_baseline_sim(language, viol, mgain, nconstraints, mb, gam, parameters):
         print("Done")
 
 
-def run_agree_disagree_sim(language, viol, mgain, nconstraints, mb, gam, parameters):
+def run_agree_disagree_sim(language, viol, mgain, nconstraints, mb, gam, parameters,reducemem):
     '''
     this is not described anywhere, is work in progress
     makes a bunch of constraints on the basis of the natural classes structure of the language
@@ -145,12 +145,12 @@ def run_agree_disagree_sim(language, viol, mgain, nconstraints, mb, gam, paramet
         viol, mgain, nconstraints, gam = params.read_params()
     else:
         params.makeParams(consize=nconstraints, violable=viol, mingain=mgain, gamma=gam, ag_disag=True)
-    simfunc.runBaselineSim(basepath)
+    simfunc.runBaselineSim(basepath, reducemem=reducemem)
     wrapstring = os.path.join('sims', '_'.join([language.replace(os.sep, "_"), 'baseline', 'AG', viol[:2], 'gain', mingain, 'ncons', nconstraints]))
     return simfunc.wrapSims(wrapstring, ret=True)
 
 
-def run_handmade_projection_sim(language, viol, mgain, nconstraints, gam, parameters, feature):
+def run_handmade_projection_sim(language, viol, mgain, nconstraints, gam, parameters, feature, reducemem):
     '''
     this either creates a projection file based on the value of "feature" (e.g., "-son") or runs a simulation with a custom projection file. To do the latter, supply a full path to the projection file as the last argument.
     '''
@@ -164,7 +164,7 @@ def run_handmade_projection_sim(language, viol, mgain, nconstraints, gam, parame
     else:
         params.makeParams(consize=nconstraints, violable=viol, mingain=mgain, gamma=gam)
     simfunc.handmakeProjection(basepath, feature)
-    simfunc.runCustomSim(feature)
+    simfunc.runCustomSim(feature, reducemem=reducemem)
     if 'output_baseline' in os.listdir(basepath):
         shutil.rmtree(basepath+'output_baseline')
     simfunc.wrapSims(os.path.join('sims', '_'.join(language.replace(os.sep, "_"), 'custom')), cust=True)
@@ -182,7 +182,7 @@ def test_grammar(grammarfile, testfile):
         print('done! your tableau.txt file has been placed in a new directory that has your original grammar.txt file.')
     
 
-def save_program_trace(learnsim, language, viol, mgain, nconstraints, mb, gam, parameters):
+def save_program_trace(learnsim, language, viol, mgain, nconstraints, mb, gam, parameters, reducemem):
     '''
     saves stdout of learnsim to a file.
     '''
@@ -190,7 +190,7 @@ def save_program_trace(learnsim, language, viol, mgain, nconstraints, mb, gam, p
     progtrace = io.StringIO()
     out = open(os.path.join(basepath, 'program_trace.txt'), 'w', encoding='utf-8')
     with contextlib.redirect_stdout(progtrace):
-        stuff = learnsim(language, viol, mgain, nconstraints, mb, gam, parameters)
+        stuff = learnsim(language, viol, mgain, nconstraints, mb, gam, parameters, reducemem=reducemem)
     out.write(progtrace.getvalue())
     out.close()
     shutil.move(os.path.join(basepath, 'program_trace.txt'), os.path.join(basepath, stuff, 'program_trace.txt'))
@@ -199,7 +199,7 @@ def save_program_trace(learnsim, language, viol, mgain, nconstraints, mb, gam, p
 
 if __name__=='__main__':
     import sys
-    HelpMessage = '\n\n\nTo run the projection learner from the command line, enter:\n\n\n $ python3 run_sim.py language/subfolder \n\n and then enter the parameters for type of simulation ("baseline", "custom", "wb", "ag_disag", "mbsublex"), gain (e.g., "gain100"), the number of constraints (e.g., "ncons30"), and optionally "mb" if you want to project a morpheme boundary symbol on induced projections. By default, the learner will learn violable constraints ("vi"); if you want to override this, enter "in"(for "inviolable"). We recommend also specifying a "gamma" parameter (e.g., "gamma5"), which increases the importance of constraint violations in the grammar and makes it less likely that you will end up with a lot of constraints with a weight of 0. If not specified it defaults to "0".  \n\nExample: \n\n\n$ python3 run_sim.py quechua/words wb mb gain50 ncons100\n\n This will run a simulation inducing projections from placeholder constraints, project "mb" segments onto the projection, look for constraints that are violable, and leave gamma at the default value of 0. \n\n\nAnother example, this time looking for inviolable constraints in a baseline simulation only: \n\n\n$ python3 run_sim.py russian gamma20 baseline in gain10 ncons50\n\n\nIf you want to run a simulation with a custom projection, enter the features you want to project last, or else specify a path to your projections.txt file.\n\n $ python3 run_sim.py quechua/words custom in 50 100 -sonorant\n\n\n Finally, you may supply your own parameters file, leaving gain, con size,gamma, and violability unspecified in the command line call. Make sure you have a params.txt file in your data folder, and enter a "parameters" argument in your command line call:\n\n$ python3 run_sim.py russian baseline parameters.\n\n\n To run a sublexicon simulation, you must have a parsed file with morpheme boundaries. Call the simulation as follows:\n\n\n$ python3 run_sim.py aymara/words mbsublex parameters\n\n\n(As before, you can specify your own gain and ncons and gamma levels. Keep in mind that these are modified when creating the sublexicon, since a larger learning set needs a higher gain and gamma setting than a smaller one.)\n\n\nTo *test* an existing grammar, do the following:\n\n\n$ python3 run_sim.py fullpathto/grammar.txt fullpathto/TestingData.txt test\n\n\n(the arguments can be in any order, but one must lead to grammar.txt, another--to TestingData.txt, and please supply "test" as the switch. Also, there must be a projections.txt file inside the grammar directory, and a Features.txt file inside the testing data directory.'
+    HelpMessage = '\n\n\nTo run the projection learner from the command line, enter:\n\n\n $ python3 run_sim.py language/subfolder \n\n and then enter the parameters for type of simulation ("baseline", "custom", "wb", "ag_disag", "mbsublex"), gain (e.g., "gain100"), the number of constraints (e.g., "ncons30"), and optionally "mb" if you want to project a morpheme boundary symbol on induced projections. By default, the learner will learn violable constraints ("vi"); if you want to override this,enter "in"(for "inviolable"). We recommend also specifying a "gamma" parameter (e.g., "gamma5"), which increases the importance of constraint violations in the grammar and makes it less likely that you will end up with a lot of constraints with a weight of 0. If not specified it defaults to "0".  \n\nExample: \n\n\n$ python3 run_sim.py quechua/words wb mb gain50 ncons100\n\n This will run a simulation inducing projections from placeholder constraints, project "mb" segments onto the projection, look for constraints that are violable, and leave gamma at the default value of 0. \n\n\nAnother example, this time looking for inviolable constraints in a baseline simulation only: \n\n\n$ python3 run_sim.py russian gamma20 baseline in gain10 ncons50\n\n\nIf you want to run a simulation with a custom projection, enter the features you want to project last, or else specify a path to your projections.txt file.\n\n $ python3 run_sim.py quechua/words custom in 50 100 -sonorant\n\n\nYou may supply your own parameters file, leaving gain, con size,gamma, and violability unspecified in the command line call. Make sure you have a params.txt file in your data folder, and enter a "parameters" argument in your command line call:\n\n$ python3 run_sim.py russian baseline parameters.\n\n\n To run a sublexicon simulation, you must have a parsed file with morpheme boundaries. Call the simulation as follows:\n\n\n$ python3 run_sim.py aymara/words mbsublex parameters\n\n\n(As before, you can specify your own gain and ncons and gamma levels. Keep in mind that these are modified when creating the sublexicon, since a larger learning set needs a higher gain and gamma setting than a smaller one.)\n\n\nTo *test* an existing grammar, do the following:\n\n\n$ python3 run_sim.py fullpathto/grammar.txt fullpathto/TestingData.txt test\n\n\n(the arguments can be in any order, but one must lead to grammar.txt, another--to TestingData.txt, and please supply "test" as the switch. Also, there must be a projections.txt file inside the grammar directory, and a Features.txt file inside the testing data directory.\n\n\nFinally, if you are running simulations on a slow machine with limited RAM, you can pass "slow" as a command line argument.'
     if 'help' in sys.argv:
         print(HelpMessage)
     elif 'test' in sys.argv:
@@ -207,6 +207,10 @@ if __name__=='__main__':
         grammarpath = [x for x in sys.argv if x.endswith('grammar.txt')][0]
         test_grammar(grammarpath, testpath)
     else:
+        if "slow" in sys.argv:
+            reducemem=True
+        else:
+            reducemem=False
         filepath=sys.argv[1]
         featurefile = os.path.join(os.getcwd().split('code')[0], 'data', filepath, 'Features.txt')
         datafile = os.path.join(os.getcwd().split('code')[0], 'data', filepath, 'LearningData.txt')
@@ -247,31 +251,31 @@ if __name__=='__main__':
                 learnviolable='violable'
             if 'baseline' in sys.argv:
                 try:
-                    run_baseline_sim(filepath, learnviolable, mingain, ncons, mb, gam, parameters)
+                    run_baseline_sim(filepath, learnviolable, mingain, ncons, mb, gam, parameters, reducemem)
                 except IndexError:
                     print(HelpMessage)
             elif 'custom' in sys.argv:
                 try:
                     feat = sys.argv[-1]
-                    run_handmade_projection_sim(filepath, learnviolable, mingain, ncons, gam, parameters, feat)
+                    run_handmade_projection_sim(filepath, learnviolable, mingain, ncons, gam, parameters, feat, reducemem)
                 except IndexError:
                     print(HelpMessage)
             elif 'wb' in sys.argv:
                 try:
                     print('Working on your learning simulation. Your results will be saved inside the "sims" folder. If the simulation fails halfway and you get an incomprehensible error, please check the contents of maxent2/temp/maxentoutput.txt.')
-                    outdir = save_program_trace(run_wb_sim, filepath, learnviolable, mingain, ncons, mb, gam, parameters)
+                    outdir = save_program_trace(run_wb_sim, filepath, learnviolable, mingain, ncons, mb, gam, parameters, reducemem)
                     print("Done! look for your results in the simulation folder, " + outdir)
                 except IndexError:
                     print(HelpMessage)
             elif 'ag_disag' in sys.argv:
                 try:
                     print('Working on your learning simulation.')
-                    outdir=save_program_trace(run_agree_disagree_sim, filepath, learnviolable, mingain, mb, ncons, gam, parameters)
+                    outdir=save_program_trace(run_agree_disagree_sim, filepath, learnviolable, mingain, mb, ncons, gam, parameters, reducemem)
                 except IndexError:
                     print (HelpMessage)
             elif 'mbsublex' in sys.argv:
                 try:
                     print('Working on your learning simulation. To check the progress of the simulation, look inside maxent2/temp. Your results will be saved in the "sims" folder. If the simulation fails halfway or you get an error you cannot understand, the answer is probably inside maxent2/temp/maxentoutput.txt.')
-                    outdir=save_program_trace(run_mbsublex_sim, filepath, learnviolable, mingain, ncons, mb, gam, parameters)
+                    outdir=save_program_trace(run_mbsublex_sim, filepath, learnviolable, mingain, ncons, mb, gam, parameters, reducemem)
                 except IndexError:
                     print(HelpMessage)

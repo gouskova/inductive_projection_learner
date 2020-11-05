@@ -113,7 +113,7 @@ def makeJarPaths(basepath):
         alljar=':'.join(jarpaths+extpaths)
         return alljar
 
-def setJVOptions(basepath, reducemem=False, timeoutinsec=False):
+def setJVOptions(basepath, reducemem=True, timeoutinsec=False):
         '''
         do not call this directly, it gets called by one of the simulation functions (runBaselineSim, for example)
         basepath is where maxent2 is located (see makeJarPaths)
@@ -176,7 +176,7 @@ def readNatClasses(cleanup=False):
         os.remove(natclassfile)
     return nclassdic
  
-def runBaselineSim(basepath, reducemem=False, timeoutinsec=False, rt_output_baseline=True):
+def runBaselineSim(basepath, reducemem=True, timeoutinsec=False, rt_output_baseline=True):
         """
         this will run a simulation with just a default projection.
         basepath is the location of maxent2/temp.
@@ -282,7 +282,7 @@ def handmakeProjection(basepath, feature):
 
 
 
-def runCustomSim(feature=None, simtype='custom', basepath=os.getcwd().split('code')[0], reducemem=False, package=True):
+def runCustomSim(feature=None, simtype='custom', basepath=os.getcwd().split('code')[0], reducemem=True, package=True):
         '''
         runs one simulation with a default tier plus a single additional tier.
         that tier can be based on a feature, or supplied manually.
